@@ -1,0 +1,523 @@
+[gd_scene load_steps=16 format=3 uid="uid://dud8uot1j4inu"]
+
+[ext_resource type="PackedScene" uid="uid://oujxm28f15y1" path="res://scenes/images/road.tscn" id="1_enpyv"]
+[ext_resource type="PackedScene" uid="uid://boyomqbtxnrph" path="res://scenes/images/small_car.tscn" id="2_vwapj"]
+[ext_resource type="Script" path="res://scenes/levels/BUST/next/node_2d.gd" id="3_oe3xq"]
+[ext_resource type="Script" path="res://scripts/car_go-in-entrance.gd" id="3_u4tmo"]
+[ext_resource type="AudioStream" uid="uid://s7bc4g74cd6c" path="res://assets/audio/sfx/random (2).wav" id="4_dh7af"]
+[ext_resource type="AudioStream" uid="uid://b2qty8if0wu6e" path="res://assets/audio/sfx/explosion (1).wav" id="4_em7s0"]
+[ext_resource type="AudioStream" uid="uid://c2ach1k2jk14e" path="res://assets/audio/sfx/powerUp.wav" id="5_8u61o"]
+[ext_resource type="PackedScene" uid="uid://8flk4m5liseg" path="res://scenes/images/screen.tscn" id="6_siury"]
+[ext_resource type="Script" path="res://scenes/levels/BUST/next/sound.gd" id="7_rsu4m"]
+[ext_resource type="AudioStream" uid="uid://dni6fr3g1nlft" path="res://assets/audio/sfx/random (1).wav" id="8_2v380"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e20f2"]
+size = Vector2(72, 57)
+
+[sub_resource type="Gradient" id="Gradient_2rx2o"]
+
+[sub_resource type="Gradient" id="Gradient_qf4es"]
+offsets = PackedFloat32Array(0, 0.0277778, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.25, 0.25, 0.25, 1, 1, 1, 1, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4a78y"]
+size = Vector2(2, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_64wqj"]
+size = Vector2(1523, 206)
+
+[node name="entrance" type="Node2D"]
+
+[node name="Road" parent="." instance=ExtResource("1_enpyv")]
+
+[node name="Line2D13" type="Line2D" parent="Road"]
+points = PackedVector2Array(-248, -147, -373, -145, -1658, -94)
+width = 200.0
+default_color = Color(0.305882, 0.858824, 1, 1)
+
+[node name="Line2D10" type="Line2D" parent="Road"]
+points = PackedVector2Array(-425, 4, -616, -2, -807, 2, -1001, 33, -1107, 13, -1197, -12, -1293, -33, -1471, -44, -1569, -10, -1739, 0)
+width = 100.0
+default_color = Color(0, 1, 0, 1)
+
+[node name="Line2D11" type="Line2D" parent="Road"]
+points = PackedVector2Array(-325, 63, -672, 59, -836, 63, -1282, 60, -1747, 55)
+width = 100.0
+default_color = Color(0.12549, 0.12549, 0.12549, 1)
+
+[node name="Line2D12" type="Line2D" parent="Road"]
+points = PackedVector2Array(-455, 160, -986, 157, -1216, 154, -1485, 156, -1756, 143)
+width = 100.0
+default_color = Color(0, 0.443137, 0, 1)
+
+[node name="Line2D14" type="Line2D" parent="Road"]
+position = Vector2(-546, 8)
+points = PackedVector2Array(-175, -123, -174, -33)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D15" type="Line2D" parent="Road"]
+position = Vector2(-278, 5)
+points = PackedVector2Array(-179, -136, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D16" type="Line2D" parent="Road"]
+position = Vector2(-546, 8)
+points = PackedVector2Array(14, -179, 43, -112, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 30, -188, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 35, -168)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D17" type="Line2D" parent="Road"]
+position = Vector2(-546, 8)
+points = PackedVector2Array(-207, -178, -215, -133, -201, -118, -159, -124, -126, -126, -117, -144, -114, -161, -180, -171, -192, -147, -130, -147)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Lab" type="Node2D" parent="."]
+
+[node name="bg" type="Node2D" parent="Lab"]
+
+[node name="Line2D" type="Line2D" parent="Lab/bg"]
+points = PackedVector2Array(400, 710, -1712.57, 697, -2922, 710, -5026.4, 710)
+width = 1000.0
+default_color = Color(0.75, 0.75, 0.75, 1)
+
+[node name="Line2D2" type="Line2D" parent="Lab/bg"]
+points = PackedVector2Array(430, 800, -5186, 800)
+width = 300.0
+default_color = Color(0.625, 0.625, 0.625, 1)
+
+[node name="desk" type="Node2D" parent="Lab"]
+
+[node name="Screen2" parent="Lab/desk" instance=ExtResource("6_siury")]
+position = Vector2(-2416, 560)
+rotation = -0.261799
+scale = Vector2(0.480255, 0.480255)
+skew = 0.261799
+
+[node name="Screen" parent="Lab/desk" instance=ExtResource("6_siury")]
+position = Vector2(-2248, 512)
+
+[node name="Screen3" parent="Lab/desk" instance=ExtResource("6_siury")]
+position = Vector2(-2856, 472)
+scale = Vector2(2.01073, 2.01073)
+
+[node name="Line2D2" type="Line2D" parent="Lab/desk"]
+points = PackedVector2Array(-2120, 624, -2120, 680)
+default_color = Color(0.460938, 0.460938, 0.460938, 1)
+
+[node name="Line2D5" type="Line2D" parent="Lab/desk"]
+position = Vector2(-328, 0)
+points = PackedVector2Array(-2120, 624, -2120, 680)
+default_color = Color(0.460938, 0.460938, 0.460938, 1)
+
+[node name="Line2D3" type="Line2D" parent="Lab/desk"]
+position = Vector2(-32, -56)
+points = PackedVector2Array(-2120, 624, -2120, 704)
+default_color = Color(0.460938, 0.460938, 0.460938, 1)
+
+[node name="Line2D4" type="Line2D" parent="Lab/desk"]
+position = Vector2(-296, -56)
+points = PackedVector2Array(-2120, 624, -2120, 704)
+default_color = Color(0.460938, 0.460938, 0.460938, 1)
+
+[node name="Line2D" type="Line2D" parent="Lab/desk"]
+points = PackedVector2Array(-2448, 624, -2120, 624, -2152, 568, -2416, 568, -2448, 624)
+
+[node name="Line2D" type="Line2D" parent="Lab/desk/Line2D"]
+points = PackedVector2Array(-2440, 608, -2432, 616, -2408, 584, -2160, 584, -2144, 616, -2136, 608, -2416, 608)
+width = 30.0
+
+[node name="Line2D2" type="Line2D" parent="Lab/desk/Line2D"]
+points = PackedVector2Array(-2416, 568, -2448, 624, -2392, 624)
+
+[node name="keyboard" type="Node2D" parent="Lab/desk"]
+position = Vector2(48, 0)
+
+[node name="Line2D2" type="Line2D" parent="Lab/desk/keyboard"]
+points = PackedVector2Array(-2366, 611, -2287, 610, -2291, 589, -2358, 589, -2362, 610, -2293, 603, -2357, 601, -2354, 597, -2292, 595)
+default_color = Color(0.853516, 0.00464251, 0.250355, 1)
+
+[node name="Line2D" type="Line2D" parent="Lab/desk/keyboard"]
+position = Vector2(-8, 0)
+points = PackedVector2Array(-2352, 584, -2360, 616, -2272, 616, -2280, 584)
+closed = true
+width = 5.0
+default_color = Color(0.0917969, 0.0917969, 0.0917969, 1)
+
+[node name="keys" type="Node2D" parent="Lab/desk/keyboard"]
+
+[node name="Line2D" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2362, 610, -2355, 610)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D2" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2361, 604, -2346, 604)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D3" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2354, 610, -2347, 610)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D4" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2336, 610, -2346, 610)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D5" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2292, 610, -2285, 610)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D6" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2293, 610, -2300, 610)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D7" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2309, 610, -2301, 610)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D8" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2310, 610, -2335, 610)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D9" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2287, 604, -2303, 604)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D10" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2288, 598, -2300, 598)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D23" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-60, 0)
+points = PackedVector2Array(-2289, 598, -2300, 598)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D11" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2290, 592, -2295, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D12" type="Line2D" parent="Lab/desk/keyboard/keys"]
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D13" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-6, 0)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D14" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-12, 0)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D15" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-18, 0)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D16" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-24, 0)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D17" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-30, 0)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D18" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-36, 0)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D19" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-42, 0)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D20" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-48, 0)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D21" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-54, 0)
+points = PackedVector2Array(-2304, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D22" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-5, 6)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D24" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-11, 6)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D25" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-17, 6)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D26" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-23, 6)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D27" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-29, 6)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D28" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-35, 6)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D29" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-41, 6)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D37" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-47, 6)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D30" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-44, 12)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D31" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-38, 12)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D32" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-32, 12)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D33" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-26, 12)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D34" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-20, 12)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D35" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-14, 12)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="Line2D36" type="Line2D" parent="Lab/desk/keyboard/keys"]
+position = Vector2(-8, 12)
+points = PackedVector2Array(-2301, 592, -2296, 592)
+width = 5.0
+default_color = Color(0.730469, 0.730469, 0.730469, 1)
+
+[node name="mouse" type="Node2D" parent="Lab/desk/keyboard"]
+
+[node name="Line2D" type="Line2D" parent="Lab/desk/keyboard/mouse"]
+position = Vector2(-8, 0)
+points = PackedVector2Array(-2248, 616, -2256, 592)
+width = 15.0
+default_color = Color(0.427734, 0.427734, 0.427734, 1)
+
+[node name="Line2D6" type="Line2D" parent="Lab/desk"]
+points = PackedVector2Array(-2656, 392, -2624, 480, -2576, 536, -2544, 552, -2488, 552, -2440, 536, -2352, 472)
+default_color = Color(0.388672, 0.388672, 0.388672, 1)
+
+[node name="the giant panda" parent="." instance=ExtResource("2_vwapj")]
+position = Vector2(1312, -14)
+script = ExtResource("3_u4tmo")
+
+[node name="CPUParticles2D1" type="CPUParticles2D" parent="the giant panda"]
+position = Vector2(-79.8001, 95.9622)
+rotation = -0.342787
+spread = 13.38
+gravity = Vector2(0, 50)
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+scale_amount_max = 8.0
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="the giant panda"]
+position = Vector2(632.845, 89.3963)
+rotation = -0.342787
+spread = 13.38
+gravity = Vector2(0, 50)
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+scale_amount_max = 8.0
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="the giant panda"]
+visible = false
+position = Vector2(588, 90)
+rotation = -0.342787
+spread = 13.38
+gravity = Vector2(0, 50)
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+scale_amount_max = 8.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="the giant panda"]
+stream = ExtResource("4_em7s0")
+bus = &"quait_sfx"
+
+[node name="Area2D" type="Area2D" parent="the giant panda"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="the giant panda/Area2D"]
+position = Vector2(-76, 50.5)
+shape = SubResource("RectangleShape2D_e20f2")
+
+[node name="Camera2D" type="Camera2D" parent="the giant panda"]
+position = Vector2(-1312, 14)
+offset = Vector2(1112, 0)
+zoom = Vector2(2, 2)
+limit_right = -1040
+position_smoothing_enabled = true
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="the giant panda"]
+
+[node name="powerUP" type="AudioStreamPlayer" parent="the giant panda"]
+stream = ExtResource("5_8u61o")
+volume_db = 5.0
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(0, 176)
+script = ExtResource("3_oe3xq")
+
+[node name="Line2D2" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-156, -85, -188, -67, -212, -11, -211, 65, -207, -6, -151, -83, -84, -72, -94, 54, -216, 52, -138, -74, -181, 44, -117, -67, -154, 42, -101, -66, -133, 40, -103, 20, -101, -10)
+width = 30.0
+default_color = Color(0.630208, 0.630208, 0.630208, 1)
+
+[node name="Line2D4" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-85, -50, -93, 55, -165, 53, -160, 5, -144, -25, -128, -42, -97, -37, -110, 42, -151, 41, -144, 8, -128, 27, -135, 0, -112, -29)
+width = 30.0
+default_color = Color(0.723958, 0.723958, 0.723958, 1)
+
+[node name="Line2D" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-226, 65, -225, -13, -202, -80, -166, -95, -115, -88, -67, -83)
+default_color = Color(0.395833, 0.395833, 0.395833, 1)
+
+[node name="Line2D5" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-226, -13, -177, 0, -155, -43, -202, -80, -164, -94, -135, -60)
+default_color = Color(0.395833, 0.395833, 0.395833, 1)
+
+[node name="Line2D3" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-182, 68, -178, -2, -156, -41, -135, -60, -70, -51)
+default_color = Color(0.395833, 0.395833, 0.395833, 1)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Node2D"]
+stream = ExtResource("4_dh7af")
+autoplay = true
+
+[node name="Line2D6" type="Line2D" parent="Node2D"]
+visible = false
+position = Vector2(0, -8)
+points = PackedVector2Array(-212, 22, -240, 11, -221, 0, -218, -19, -202, -9, -182, -25, -175, -4, -166, 3, -181, 10, -172, 25, -196, 27, -202, 44)
+closed = true
+default_color = Color(0.886275, 0.265253, 0.318219, 1)
+
+[node name="Line2D7" type="Line2D" parent="Node2D/Line2D6"]
+points = PackedVector2Array(-217, -8, -198, -6, -185, -18, -183, -6, -179, 1, -189, 7, -183, 20, -201, 21, -204, 34, -209, 18, -224, 13, -214, 3, -212, -12, -213, 13, -208, 20, -192, 15, -184, -8, -207, -2, -206, 15, -198, 8, -191, -1, -204, 2)
+default_color = Color(0.886275, 0.698039, 0.658824, 1)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(-200, 0)
+emitting = false
+amount = 100
+one_shot = true
+explosiveness = 1.0
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 10.0
+spread = 180.0
+gravity = Vector2(0, 500)
+initial_velocity_max = 300.0
+scale_amount_max = 50.0
+color = Color(1, 0.6, 0, 1)
+color_ramp = SubResource("Gradient_2rx2o")
+color_initial_ramp = SubResource("Gradient_qf4es")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[node name="Area2D" type="Area2D" parent="Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D"]
+position = Vector2(-185, 44)
+shape = SubResource("RectangleShape2D_4a78y")
+
+[node name="cover" type="Node2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="cover"]
+points = PackedVector2Array(-293, 157, -19, 153)
+width = 110.0
+default_color = Color(0, 0.443137, 0, 1)
+
+[node name="Line2D5" type="Line2D" parent="cover"]
+points = PackedVector2Array(-299, 92, -12, 93)
+width = 35.0
+default_color = Color(0.12549, 0.12549, 0.12549, 1)
+
+[node name="Line2D2" type="Line2D" parent="cover"]
+points = PackedVector2Array(393, 210, -1473, 202, -1759, 196)
+
+[node name="sound" type="Node2D" parent="."]
+script = ExtResource("7_rsu4m")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="sound"]
+position = Vector2(-838, 633)
+stream = ExtResource("8_2v380")
+
+[node name="Area2D" type="Area2D" parent="sound"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sound/Area2D"]
+position = Vector2(-984.5, 301)
+shape = SubResource("RectangleShape2D_64wqj")
+
+[connection signal="area_entered" from="Node2D/Area2D" to="the giant panda" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="sound/Area2D" to="sound" method="_on_area_2d_area_entered"]

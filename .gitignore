@@ -1,0 +1,49 @@
+# Godot-specific files
+.export/
+.import/
+*.translation
+*.mo
+*.pot
+
+# Godot 4 cache and config files
+*.godot/
+*.config/
+*.cfg
+*.log
+*.mono/
+
+# Godot Editor-specific files
+.editor_config
+.editor_settings-*
+godot.project.user
+
+# Compiled scripts
+*.mono.dll
+*.mono.pdb
+*.csproj
+*.sln
+*.csproj.user
+.mono/
+
+# Debug and temporary files
+*.rsc
+*.rscc
+*.retry
+*.dump
+*.err
+*.mdmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+
+# VS Code-specific files
+.vscode/

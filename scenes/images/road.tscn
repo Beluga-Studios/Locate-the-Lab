@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://oujxm28f15y1"]
+
+[node name="Road" type="Node2D"]
+
+[node name="Line2D8" type="Line2D" parent="."]
+points = PackedVector2Array(-313, -114, 305, -100)
+width = 300.0
+default_color = Color(0.30739, 0.859689, 1, 1)
+
+[node name="Line2D3" type="Line2D" parent="."]
+position = Vector2(1, -153)
+points = PackedVector2Array(-461, 160, -24, 150, 158, 136, 394, 161)
+width = 100.0
+default_color = Color(0, 1, 0, 1)
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(-4, -35)
+points = PackedVector2Array(-369, 97, -132.694, 100.604, -50, 100, 89, 101, 335, 112)
+width = 100.0
+default_color = Color(0.125, 0.125, 0.125, 1)
+
+[node name="Line2D2" type="Line2D" parent="."]
+points = PackedVector2Array(-461, 160, 394, 161)
+width = 100.0
+default_color = Color(0, 0.442708, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="."]
+points = PackedVector2Array(-175, -123, -174, -33)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D5" type="Line2D" parent="."]
+position = Vector2(268, -3)
+points = PackedVector2Array(-179, -136, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="."]
+points = PackedVector2Array(14, -179, 43, -112, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 30, -188, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 35, -168)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D7" type="Line2D" parent="."]
+points = PackedVector2Array(-207, -178, -215, -133, -201, -118, -159, -124, -126, -126, -117, -144, -114, -161, -180, -171, -192, -147, -130, -147)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D9" type="Line2D" parent="."]
+position = Vector2(-7, -1)
+points = PackedVector2Array(212, -193, 239, -138, 296, -129, 334, -142, 295, -151, 242, -164, 233, -187)
+width = 30.0
+default_color = Color(0.947917, 0.865145, 0.0273425, 1)

@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://b5meoxibrm6xu"]
+
+[ext_resource type="Shader" path="res://shader1.gdshader" id="1_68il5"]
+[ext_resource type="PackedScene" uid="uid://xtp52ga273hp" path="res://scenes/images/menu_background.tscn" id="1_ti5dk"]
+[ext_resource type="PackedScene" uid="uid://cqr1n7kcpijte" path="res://scenes/Buttons/map.tscn" id="2_ee4tp"]
+[ext_resource type="PackedScene" uid="uid://c31folf7tqte2" path="res://scenes/Buttons/suicide.tscn" id="3_hmn0p"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k8gdh"]
+shader = ExtResource("1_68il5")
+shader_parameter/EnableShader = true
+shader_parameter/LinearGradient = false
+shader_parameter/ClampDist = true
+shader_parameter/DistOffset = -0.1
+shader_parameter/DistAdd = -0.13
+shader_parameter/GridScale = 1
+shader_parameter/ModulateColor = Color(0, 0, 0, 1)
+shader_parameter/GradientOpacity = 0.5
+
+[node name="Menu" type="Node2D"]
+material = SubResource("ShaderMaterial_k8gdh")
+
+[node name="Menu background" parent="." instance=ExtResource("1_ti5dk")]
+position = Vector2(0, -30)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="MAP" parent="." instance=ExtResource("2_ee4tp")]
+position = Vector2(-16, -56)
+
+[node name="Suicide" parent="." instance=ExtResource("3_hmn0p")]
+position = Vector2(160, 136)

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://jwjt0u5utj00"]
+
+[node name="give_up" type="Node2D"]
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, -16, 0, -16, 16, 0, 16, 0, 32, -16, 32)
+
+[node name="Line2D2" type="Line2D" parent="."]
+points = PackedVector2Array(16, 0, 16, 32, 32, 32, 32, 0)
+
+[node name="Line2D3" type="Line2D" parent="."]
+points = PackedVector2Array(48, 0, 48, 32)
+
+[node name="Line2D4" type="Line2D" parent="."]
+points = PackedVector2Array(80, 0, 64, 0, 64, 32, 80, 32)
+
+[node name="Line2D5" type="Line2D" parent="."]
+position = Vector2(40, 0)
+points = PackedVector2Array(48, 0, 48, 32)
+
+[node name="Line2D6" type="Line2D" parent="."]
+points = PackedVector2Array(120, 16, 120, 32, 104, 32, 104, 16, 120, 16, 120, 0)
+
+[node name="Line2D7" type="Line2D" parent="."]
+points = PackedVector2Array(152, 0, 136, 0, 136, 16, 152, 16, 136, 16, 136, 32, 152, 32)

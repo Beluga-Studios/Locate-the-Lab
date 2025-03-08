@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://delhsee4rj4s6"]
+
+[node name="Redo_button" type="Node2D"]
+
+[node name="words" type="Node2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="words"]
+points = PackedVector2Array(-112, -192, -112, -248, -88, -248, -88, -224, -112, -224, -88, -192)
+
+[node name="Line2D2" type="Line2D" parent="words"]
+points = PackedVector2Array(-48, -200, -72, -200, -72, -224, -48, -224, -72, -224, -72, -248, -48, -248)
+
+[node name="Line2D3" type="Line2D" parent="words"]
+points = PackedVector2Array(-40, -200, -40, -248, -24, -248, -16, -232, -16, -216, -24, -200)
+closed = true
+
+[node name="Line2D4" type="Line2D" parent="words"]
+points = PackedVector2Array(0, -240, 0, -208, 8, -200, 24, -200, 32, -208, 32, -240, 24, -248, 8, -248)
+closed = true

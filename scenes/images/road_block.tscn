@@ -1,0 +1,593 @@
+[gd_scene load_steps=8 format=3 uid="uid://b42upusjgm6wi"]
+
+[ext_resource type="Script" path="res://scenes/images/road_block.gd" id="1_5s50s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kmtbt"]
+size = Vector2(104, 88)
+
+[sub_resource type="Animation" id="Animation_vpje3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/person2/Line2D4:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-320, 30, -318, 28, -314, 29, -312, 31)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/person2/Line2D5:points")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-318, 23, -318, 26)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/person2/Line2D6:points")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-314, 22, -314, 26)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/person2/Line2D8:points")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-320, 40, -304, 48)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/person2/Line2D2:points")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-328, 65, -320, 40, -304, 56, -320, 40)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/pole:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(72, -38)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D/person2/Line2D:points")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-336, 88, -328, 80, -328, 64, -320, 80, -312, 88)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node2D/person1/Line2D:points")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-344, 88, -336, 80, -328, 64, -320, 80, -320, 88)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node2D/person1/Line2D2:points")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-328, 64, -320, 40, -296, 40, -320, 40)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Node2D/person1/Line2D3:points")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-320, 32, -312, 32, -304, 24, -304, 16, -312, 8, -320, 8, -328, 16, -328, 24, -320, 32)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Node2D/person1/Line2D4:points")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-320, 28, -318, 28, -314, 30, -312, 28)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Node2D/person1/Line2D5:points")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-318, 22, -318, 26)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Node2D/person1/Line2D6:points")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-314, 24, -314, 26)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Node2D/person1/Line2D7:points")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-312, 48, -296, 40, -272, 40)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Node2D/person1/Line2D8:points")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-320, 40, -312, 48, -296, 48)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Node2D/person1:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(56, -55)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Node2D/person1/Line2D7:width")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [8.0]
+}
+
+[sub_resource type="Animation" id="Animation_751eu"]
+resource_name = "per2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/person2/Line2D4:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [PackedVector2Array(-320, 30, -318, 28, -314, 29, -312, 31), PackedVector2Array(-320, 32, -317, 29, -314, 30, -312, 32)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/person2/Line2D5:points")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.866667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-318, 23, -318, 26), PackedVector2Array(-318, 25, -318, 26), PackedVector2Array(-318, 25, -318, 26)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/person2/Line2D6:points")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-314, 22, -314, 26), PackedVector2Array(-314, 22, -314, 26), PackedVector2Array(-314, 25, -314, 26)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/person2/Line2D8:points")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [PackedVector2Array(-320, 40, -304, 48), PackedVector2Array(-320, 40, -304, 56)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/person2/Line2D2:points")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [PackedVector2Array(-328, 65, -320, 40, -304, 56, -320, 40), PackedVector2Array(-328, 65, -320, 37, -304, 64, -320, 40)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/pole:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(72, -42), Vector2(72, -38)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D/person2/Line2D:points")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [PackedVector2Array(-334, 88, -332, 80, -328, 64, -319, 80, -317, 88), PackedVector2Array(-336, 88, -328, 80, -328, 64, -320, 80, -312, 88)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node2D/person1/Line2D7:points")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.366667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-312, 48, -296, 40, -272, 40), PackedVector2Array(-306, 74, -296, 64, -272, 56), PackedVector2Array(-304, 88, -288, 80, -264, 80)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node2D/person1/Line2D7:width")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.366667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [8.0, 7.0, 8.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4uigs"]
+_data = {
+"RESET": SubResource("Animation_vpje3"),
+"per2": SubResource("Animation_751eu")
+}
+
+[sub_resource type="Gradient" id="Gradient_dm8cm"]
+
+[sub_resource type="Gradient" id="Gradient_j8yr6"]
+offsets = PackedFloat32Array(0, 0.0277778, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.25, 0.25, 0.25, 1, 1, 1, 1, 1)
+
+[node name="road_block" type="Node2D"]
+script = ExtResource("1_5s50s")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Wood" type="Node2D" parent="Node2D"]
+position = Vector2(72, 0)
+
+[node name="Line2D4" type="Line2D" parent="Node2D/Wood"]
+position = Vector2(16, -40)
+points = PackedVector2Array(-304, 48, -280, 104)
+default_color = Color(0.432292, 0.157024, 0.113879, 1)
+
+[node name="Line2D5" type="Line2D" parent="Node2D/Wood"]
+position = Vector2(24, -56)
+points = PackedVector2Array(-304, 48, -280, 104)
+default_color = Color(0.432292, 0.157024, 0.113879, 1)
+
+[node name="Line2D6" type="Line2D" parent="Node2D/Wood"]
+position = Vector2(32, -72)
+points = PackedVector2Array(-304, 48, -280, 104)
+default_color = Color(0.432292, 0.157024, 0.113879, 1)
+
+[node name="Line2D7" type="Line2D" parent="Node2D/Wood"]
+position = Vector2(40, -88)
+points = PackedVector2Array(-304, 48, -280, 104)
+default_color = Color(0.432292, 0.157024, 0.113879, 1)
+
+[node name="Line2D8" type="Line2D" parent="Node2D/Wood"]
+points = PackedVector2Array(-248, -32, -288, 32)
+default_color = Color(0.557292, 0.202652, 0.146922, 1)
+
+[node name="Line2D9" type="Line2D" parent="Node2D/Wood"]
+position = Vector2(16, 16)
+points = PackedVector2Array(-248, -32, -288, 32)
+default_color = Color(0.557292, 0.202652, 0.146922, 1)
+
+[node name="Line2D" type="Line2D" parent="Node2D/Wood"]
+
+[node name="cones" type="Node2D" parent="Node2D"]
+position = Vector2(72, 0)
+
+[node name="cone1" type="Node2D" parent="Node2D/cones"]
+
+[node name="Line2D" type="Line2D" parent="Node2D/cones/cone1"]
+points = PackedVector2Array(-272, 72, -280, 32, -288, 72)
+closed = true
+default_color = Color(1, 0.468631, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D/cones/cone1"]
+points = PackedVector2Array(-291, 61, -280, 63, -269, 61)
+
+[node name="Line2D3" type="Line2D" parent="Node2D/cones/cone1"]
+position = Vector2(0, -16)
+points = PackedVector2Array(-288, 61, -280, 63, -272, 61)
+
+[node name="cone2" type="Node2D" parent="Node2D/cones"]
+position = Vector2(-6, 15)
+
+[node name="Line2D" type="Line2D" parent="Node2D/cones/cone2"]
+points = PackedVector2Array(-272, 72, -280, 32, -288, 72)
+closed = true
+default_color = Color(1, 0.468631, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D/cones/cone2"]
+points = PackedVector2Array(-291, 61, -280, 63, -269, 61)
+
+[node name="Line2D3" type="Line2D" parent="Node2D/cones/cone2"]
+position = Vector2(0, -16)
+points = PackedVector2Array(-288, 61, -280, 63, -272, 61)
+
+[node name="cone3" type="Node2D" parent="Node2D/cones"]
+position = Vector2(-16, 26)
+
+[node name="Line2D" type="Line2D" parent="Node2D/cones/cone3"]
+points = PackedVector2Array(-272, 72, -280, 32, -288, 72)
+closed = true
+default_color = Color(1, 0.468631, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D/cones/cone3"]
+points = PackedVector2Array(-291, 61, -280, 63, -269, 61)
+
+[node name="Line2D3" type="Line2D" parent="Node2D/cones/cone3"]
+position = Vector2(0, -16)
+points = PackedVector2Array(-288, 61, -280, 63, -272, 61)
+
+[node name="cone4" type="Node2D" parent="Node2D/cones"]
+position = Vector2(63, -38)
+
+[node name="Line2D" type="Line2D" parent="Node2D/cones/cone4"]
+points = PackedVector2Array(-272, 72, -280, 32, -288, 72)
+closed = true
+default_color = Color(1, 0.468631, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D/cones/cone4"]
+points = PackedVector2Array(-291, 61, -280, 63, -269, 61)
+
+[node name="Line2D3" type="Line2D" parent="Node2D/cones/cone4"]
+position = Vector2(0, -16)
+points = PackedVector2Array(-288, 61, -280, 63, -272, 61)
+
+[node name="cone5" type="Node2D" parent="Node2D/cones"]
+position = Vector2(46, -16)
+
+[node name="Line2D" type="Line2D" parent="Node2D/cones/cone5"]
+points = PackedVector2Array(-272, 72, -280, 32, -288, 72)
+closed = true
+default_color = Color(1, 0.468631, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D/cones/cone5"]
+points = PackedVector2Array(-291, 61, -280, 63, -269, 61)
+
+[node name="Line2D3" type="Line2D" parent="Node2D/cones/cone5"]
+position = Vector2(0, -16)
+points = PackedVector2Array(-288, 61, -280, 63, -272, 61)
+
+[node name="cone6" type="Node2D" parent="Node2D/cones"]
+position = Vector2(32, 6)
+
+[node name="Line2D" type="Line2D" parent="Node2D/cones/cone6"]
+points = PackedVector2Array(-272, 72, -280, 32, -288, 72)
+closed = true
+default_color = Color(1, 0.468631, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D/cones/cone6"]
+points = PackedVector2Array(-291, 61, -280, 63, -269, 61)
+
+[node name="Line2D3" type="Line2D" parent="Node2D/cones/cone6"]
+position = Vector2(0, -16)
+points = PackedVector2Array(-288, 61, -280, 63, -272, 61)
+
+[node name="pole" type="Node2D" parent="Node2D"]
+position = Vector2(72, -38)
+
+[node name="Line2D2" type="Line2D" parent="Node2D/pole"]
+points = PackedVector2Array(-348, -36, -328, -16, -312, -32, -328, -48, -344, -34, -320, -32, -328, -24, -328, -48)
+default_color = Color(0.259757, 0.515271, 1, 1)
+
+[node name="Line2D" type="Line2D" parent="Node2D/pole"]
+points = PackedVector2Array(-328, 56, -328, -8, -352, -34, -328, -58, -304, -34, -328, -8)
+width = 5.0
+
+[node name="Line2D3" type="Line2D" parent="Node2D/pole"]
+points = PackedVector2Array(-328, -40, -320, -32, -328, -24, -320, -32, -336, -32, -336, -24)
+width = 5.0
+
+[node name="person1" type="Node2D" parent="Node2D"]
+position = Vector2(56, -55)
+
+[node name="Line2D" type="Line2D" parent="Node2D/person1"]
+position = Vector2(8, 64)
+points = PackedVector2Array(-344, 88, -336, 80, -328, 64, -320, 80, -320, 88)
+width = 5.0
+
+[node name="Line2D2" type="Line2D" parent="Node2D/person1"]
+position = Vector2(8, 72)
+points = PackedVector2Array(-328, 64, -320, 40, -296, 40, -320, 40)
+width = 5.0
+
+[node name="Line2D3" type="Line2D" parent="Node2D/person1"]
+position = Vector2(8, 77)
+points = PackedVector2Array(-320, 32, -312, 32, -304, 24, -304, 16, -312, 8, -320, 8, -328, 16, -328, 24, -320, 32)
+width = 5.0
+
+[node name="Line2D4" type="Line2D" parent="Node2D/person1"]
+position = Vector2(8, 73)
+points = PackedVector2Array(-320, 28, -318, 28, -314, 30, -312, 28)
+width = 2.0
+
+[node name="Line2D5" type="Line2D" parent="Node2D/person1"]
+position = Vector2(8, 72)
+points = PackedVector2Array(-318, 22, -318, 26)
+width = 2.0
+
+[node name="Line2D6" type="Line2D" parent="Node2D/person1"]
+position = Vector2(9, 72)
+points = PackedVector2Array(-314, 24, -314, 26)
+width = 2.0
+
+[node name="Line2D7" type="Line2D" parent="Node2D/person1"]
+position = Vector2(16, 71)
+points = PackedVector2Array(-312, 48, -296, 40, -272, 40)
+width = 8.0
+default_color = Color(0.463542, 0.133924, 0.161625, 1)
+
+[node name="Line2D8" type="Line2D" parent="Node2D/person1"]
+position = Vector2(9, 77)
+points = PackedVector2Array(-320, 40, -312, 48, -296, 48)
+width = 5.0
+
+[node name="person2" type="Node2D" parent="Node2D"]
+position = Vector2(48, -64)
+
+[node name="Line2D" type="Line2D" parent="Node2D/person2"]
+points = PackedVector2Array(-336, 88, -328, 80, -328, 64, -320, 80, -312, 88)
+width = 5.0
+
+[node name="Line2D2" type="Line2D" parent="Node2D/person2"]
+points = PackedVector2Array(-328, 65, -320, 40, -304, 56, -320, 40)
+width = 5.0
+
+[node name="Line2D3" type="Line2D" parent="Node2D/person2"]
+position = Vector2(0, 6)
+points = PackedVector2Array(-320, 32, -312, 32, -304, 24, -304, 16, -312, 8, -320, 8, -328, 16, -328, 24, -320, 32)
+width = 5.0
+
+[node name="Line2D4" type="Line2D" parent="Node2D/person2"]
+points = PackedVector2Array(-320, 30, -318, 28, -314, 29, -312, 31)
+width = 2.0
+
+[node name="Line2D5" type="Line2D" parent="Node2D/person2"]
+points = PackedVector2Array(-318, 23, -318, 26)
+width = 2.0
+
+[node name="Line2D6" type="Line2D" parent="Node2D/person2"]
+points = PackedVector2Array(-314, 22, -314, 26)
+width = 2.0
+
+[node name="Line2D8" type="Line2D" parent="Node2D/person2"]
+points = PackedVector2Array(-320, 40, -304, 48)
+width = 5.0
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-196, 52)
+shape = SubResource("RectangleShape2D_kmtbt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4uigs")
+}
+autoplay = "per2"
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(-196, 25)
+emitting = false
+amount = 200
+one_shot = true
+explosiveness = 1.0
+lifetime_randomness = 1.0
+spread = 180.0
+gravity = Vector2(0, 50)
+initial_velocity_max = 300.0
+scale_amount_max = 90.0
+color = Color(1, 0.6, 0, 1)
+color_ramp = SubResource("Gradient_dm8cm")
+color_initial_ramp = SubResource("Gradient_j8yr6")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

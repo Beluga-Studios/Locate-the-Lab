@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqr1n7kcpijte"]
+
+[ext_resource type="Script" path="res://scenes/Buttons/map.gd" id="1_hcuwf"]
+[ext_resource type="PackedScene" uid="uid://11gaa8tv0pbj" path="res://scenes/images/map_image.tscn" id="2_ph3ju"]
+
+[node name="MAP" type="Node2D"]
+script = ExtResource("1_hcuwf")
+
+[node name="Map-image" parent="." instance=ExtResource("2_ph3ju")]
+scale = Vector2(0.3, 0.3)
+
+[node name="Button" type="Button" parent="."]
+offset_left = -72.0
+offset_top = -32.0
+offset_right = 64.0
+offset_bottom = 24.0
+
+[node name="Words" type="Node2D" parent="."]
+visible = false
+
+[node name="Line2D" type="Line2D" parent="Words"]
+points = PackedVector2Array(-30, -25, -50, -23, -46, -3, -25, -10, -22, 7, -42, 13)
+
+[node name="Line2D2" type="Line2D" parent="Words"]
+position = Vector2(-8, 1)
+points = PackedVector2Array(-12, -26, 18, -23, 1, -20, 0, 13)
+
+[node name="Line2D3" type="Line2D" parent="Words"]
+position = Vector2(-8, 1)
+points = PackedVector2Array(16, 8, 27, -26, 45, 12, 34, -3, 23, -3)
+
+[node name="Line2D4" type="Line2D" parent="Words"]
+position = Vector2(-4, 1)
+points = PackedVector2Array(52, 15, 54, -23, 72, -20, 74, -3, 57, -5, 76, 17)
+
+[node name="Line2D5" type="Line2D" parent="Words"]
+position = Vector2(-4, 2)
+points = PackedVector2Array(80, -21, 109, -23, 96, -17, 98, 15)
+
+[node name="Icon" type="Node2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(-16, 0)
+
+[node name="Line2D" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-48, 16, -48, -24, -32, 8, -24, -24, -16, 16)
+
+[node name="Line2D2" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(0, 16, 16, -24, 32, 16, 25, 0, 8, 0)
+
+[node name="Line2D3" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(48, 16, 48, -24, 64, -24, 72, -16, 72, -8, 64, 0, 48, 0)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

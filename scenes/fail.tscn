@@ -1,0 +1,284 @@
+[gd_scene load_steps=8 format=3 uid="uid://tn85i8wq7gli"]
+
+[ext_resource type="Script" path="res://scripts/die.gd" id="1_k234f"]
+[ext_resource type="AudioStream" uid="uid://8w1gfs6s52ga" path="res://assets/audio/sfx/explosion2.wav" id="2_52ksy"]
+[ext_resource type="PackedScene" uid="uid://delhsee4rj4s6" path="res://scenes/images/redo_button.tscn" id="2_dym5a"]
+[ext_resource type="FontFile" uid="uid://dt25h4oq7or7t" path="res://assets/fonts/DazHandwriting.otf" id="2_jxm43"]
+
+[sub_resource type="Animation" id="Animation_7hqik"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D2/fail/Node2D2/Line2D:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(96, 0, -32, 0, -32, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D2/fail:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D2/fail:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D2/fail:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ColorRect:color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Button:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Redo_button:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_mf0sq"]
+resource_name = "fail"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D2/fail/Node2D2/Line2D:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [PackedVector2Array(96, 0, -32, 0, -32, 0), PackedVector2Array(96, 0, -32, 0, 96, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D2/fail:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-160, 9.53674e-07), Vector2(-32, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D2/fail:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.174533]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D2/fail:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(10, 10), Vector2(2, 2)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ColorRect:color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.466667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.784314)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Button:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Redo_button:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ubpul"]
+_data = {
+"RESET": SubResource("Animation_7hqik"),
+"fail": SubResource("Animation_mf0sq")
+}
+
+[node name="fail" type="CanvasLayer"]
+script = ExtResource("1_k234f")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 1216.0
+offset_bottom = 688.0
+color = Color(0, 0, 0, 0)
+
+[node name="Button" type="Button" parent="."]
+visible = false
+offset_left = 32.0
+offset_top = 536.0
+offset_right = 208.0
+offset_bottom = 616.0
+
+[node name="Redo_button" parent="." instance=ExtResource("2_dym5a")]
+position = Vector2(160, 800)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_52ksy")
+
+[node name="Node2D2" type="Node2D" parent="."]
+position = Vector2(560, 320)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D2"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_ubpul")
+}
+
+[node name="fail" type="Node2D" parent="Node2D2"]
+
+[node name="Node2D2" type="Node2D" parent="Node2D2/fail"]
+
+[node name="Line2D" type="Line2D" parent="Node2D2/fail/Node2D2"]
+points = PackedVector2Array(96, 0, -32, 0, -32, 0)
+width = 80.0
+default_color = Color(1, 1, 1, 0.392157)
+
+[node name="words" type="Node2D" parent="Node2D2/fail"]
+
+[node name="Line2D" type="Line2D" parent="Node2D2/fail/words"]
+points = PackedVector2Array(8, -16, -8, -16, -8, 0, 8, 0, -8, 0, -8, 24)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D2/fail/words"]
+points = PackedVector2Array(16, 24, 16, -16, 32, -16, 32, 24, 32, 8, 16, 0)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="Node2D2/fail/words"]
+points = PackedVector2Array(40, -16, 56, -16, 48, -16, 48, 19, 40, 19, 56, 19)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="Node2D2/fail/words"]
+points = PackedVector2Array(64, -21, 64, 19, 80, 19)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Node2D" type="Node2D" parent="Node2D2/fail"]
+
+[node name="Line2D" type="Line2D" parent="Node2D2/fail/Node2D"]
+points = PackedVector2Array(-24, -8, -24, -32, 0, -32)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D2/fail/Node2D"]
+points = PackedVector2Array(64, -32, 88, -32, 88, -8)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="Node2D2/fail/Node2D"]
+points = PackedVector2Array(-24, 8, -24, 32, 0, 32)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="Node2D2/fail/Node2D"]
+points = PackedVector2Array(64, 32, 88, 32, 88, 8)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D5" type="Line2D" parent="Node2D2/fail/Node2D"]
+points = PackedVector2Array(16, -32, 48, -32)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="Node2D2/fail/Node2D"]
+points = PackedVector2Array(16, 32, 48, 32)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Node2D2"]
+offset_left = -496.0
+offset_top = 104.0
+offset_right = 528.0
+offset_bottom = 152.0
+theme_override_fonts/font = ExtResource("2_jxm43")
+theme_override_font_sizes/font_size = 50
+text = "Failed"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=3 uid="uid://by1lkvdn72fov"]
+
+[ext_resource type="Theme" uid="uid://bon0nwmkmu0qt" path="res://assets/theme.tres" id="1_iugdv"]
+
+[sub_resource type="SystemFont" id="SystemFont_5vrit"]
+
+[node name="car_front" type="Node2D"]
+
+[node name="Line2D11" type="Line2D" parent="."]
+points = PackedVector2Array(-32, 24, -32, 40)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D12" type="Line2D" parent="."]
+position = Vector2(64, 0)
+points = PackedVector2Array(-32, 24, -32, 40)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(-24, 32, 24, 32, 32, 16.7991, 32, -24, 24, -40, 16, -48, -16, -48, -24, -40, -32, -24, -32, 16)
+closed = true
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="."]
+points = PackedVector2Array(-8, -40, -8, 16, 16, 16, 16, 8, 16, -16)
+closed = true
+width = 40.0
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="."]
+points = PackedVector2Array(-24, -16, -16, -40, 16, -40, 24, -16)
+closed = true
+default_color = Color(0, 1, 0.827451, 1)
+
+[node name="Line2D4" type="Line2D" parent="."]
+points = PackedVector2Array(-16, -32, 16, -32, 16, -24, -16, -24)
+closed = true
+default_color = Color(0, 1, 0.827451, 1)
+
+[node name="Line2D7" type="Line2D" parent="."]
+position = Vector2(40, 0)
+points = PackedVector2Array(-56, 8, -24, 8)
+default_color = Color(0.552941, 0, 0, 1)
+
+[node name="Line2D8" type="Line2D" parent="."]
+position = Vector2(40, 0)
+points = PackedVector2Array(-56, 16, -24, 16)
+width = 5.0
+default_color = Color(0.552941, 0, 0, 1)
+
+[node name="Line2D5" type="Line2D" parent="."]
+points = PackedVector2Array(-24, 8, -16, 8)
+
+[node name="Line2D6" type="Line2D" parent="."]
+position = Vector2(40, 0)
+points = PackedVector2Array(-24, 8, -16, 8)
+
+[node name="Line2D9" type="Line2D" parent="."]
+points = PackedVector2Array(-16, 24, 16, 24)
+
+[node name="Line2D10" type="Line2D" parent="."]
+points = PackedVector2Array(-30, -11, -32, 0, 32, 0, 30, -11)
+width = 4.0
+default_color = Color(1, 0.196078, 0.196078, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -15.0
+offset_top = 19.0
+offset_right = 186.0
+offset_bottom = 82.0
+scale = Vector2(0.149401, 0.149401)
+theme = ExtResource("1_iugdv")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_5vrit")
+text = "b311UGA"

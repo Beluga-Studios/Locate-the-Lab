@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dvobuu1ghlj3x"]
+
+[node name="title" type="Node2D"]
+modulate = Color(0.13, 0.13, 0.13, 1)
+
+[node name="locate" type="Node2D" parent="."]
+position = Vector2(-6, 4)
+
+[node name="Line2D" type="Line2D" parent="locate"]
+points = PackedVector2Array(12, -4, 11, 58, 51, 59)
+
+[node name="Line2D2" type="Line2D" parent="locate"]
+points = PackedVector2Array(72, 11, 64, 48, 101, 55, 115, 23, 94, 7)
+closed = true
+
+[node name="Line2D3" type="Line2D" parent="locate"]
+points = PackedVector2Array(146, 12, 123, 19, 132, 47, 158, 51)
+
+[node name="Line2D4" type="Line2D" parent="locate"]
+points = PackedVector2Array(163, 51, 173, 0, 205, 53, 187, 30, 170, 31)
+
+[node name="Line2D5" type="Line2D" parent="locate"]
+points = PackedVector2Array(203, 1, 233, -4, 218, 3, 226, 46)
+
+[node name="Line2D6" type="Line2D" parent="locate"]
+points = PackedVector2Array(276, -1, 247, 1, 250, 23, 282, 22, 250, 23, 253, 47, 293, 48)
+
+[node name="the" type="Node2D" parent="."]
+position = Vector2(-52, 11)
+
+[node name="Line2D" type="Line2D" parent="the"]
+points = PackedVector2Array(49, 87, 98, 84, 71, 89, 76, 121)
+
+[node name="Line2D2" type="Line2D" parent="the"]
+points = PackedVector2Array(112, 78, 115, 117, 117, 96, 141, 94, 139, 75, 144, 116)
+
+[node name="Line2D3" type="Line2D" parent="the"]
+points = PackedVector2Array(180, 77, 156, 76, 161, 98, 187, 95, 162, 101, 165, 119, 197, 116)
+
+[node name="lab" type="Node2D" parent="."]
+position = Vector2(135, -69)
+
+[node name="Line2D" type="Line2D" parent="lab"]
+points = PackedVector2Array(33, 139, 35, 202, 74, 200)
+
+[node name="Line2D2" type="Line2D" parent="lab"]
+points = PackedVector2Array(81, 201, 94, 138, 120, 197, 107, 170, 89, 174)
+
+[node name="Line2D3" type="Line2D" parent="lab"]
+points = PackedVector2Array(134, 194, 127, 136, 136, 136, 142, 136, 150, 142, 153, 150, 151, 156, 145, 160, 134, 161, 145, 160, 153, 165, 158, 174, 161, 181, 159, 189, 150, 194)
+closed = true

@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://xtp52ga273hp"]
+
+[ext_resource type="PackedScene" uid="uid://buop8r70rtvtq" path="res://scenes/images/car.tscn" id="1_o1p27"]
+
+[node name="Menu background" type="Node2D"]
+
+[node name="layer4" type="Node2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="layer4"]
+points = PackedVector2Array(-432, 15, 503, 27)
+width = 500.0
+default_color = Color(0, 1, 1, 1)
+
+[node name="Line2D2" type="Line2D" parent="layer4"]
+points = PackedVector2Array(-219, -99, -112, -99, -143, -138, -161, -137, -185, -137, -197, -130, -204, -115, -181, -87)
+width = 50.0
+
+[node name="Line2D3" type="Line2D" parent="layer4"]
+position = Vector2(224, -31)
+points = PackedVector2Array(-219, -99, -112, -99, -143, -138, -161, -137, -185, -137, -197, -130, -204, -115, -181, -87)
+width = 50.0
+
+[node name="Line2D4" type="Line2D" parent="layer4"]
+position = Vector2(-5, 29)
+points = PackedVector2Array(222, -221, 221, -198, 228, -177, 231, -158, 240, -149, 255, -141, 275, -131, 291, -131, 327, -126, 360, -138, 372, -177, 368, -210, 341, -225, 311, -228, 273, -231, 248, -227, 257, -197, 297, -180, 338, -177, 342, -161, 243, -171)
+width = 50.0
+default_color = Color(1, 1, 0, 1)
+
+[node name="layer5" type="Node2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="layer5"]
+points = PackedVector2Array(-361, 107, -247, 72, -160, 30, -55, 21, 322, 86, 370, 84, 357, 189, -159, 156, 101, 81, -326, 174, -222, 163, -96, 65, -118, 28)
+width = 100.0
+default_color = Color(0, 1, 0, 1)
+
+[node name="layer2" type="Node2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="layer2"]
+points = PackedVector2Array(-345, 71, -96, 85, 126, 58, 358, 66)
+width = 50.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="layer2"]
+points = PackedVector2Array(-341, 67, -271, 77)
+default_color = Color(0.980392, 0.686275, 0.0156863, 1)
+
+[node name="Line2D3" type="Line2D" parent="layer2"]
+points = PackedVector2Array(-235, 76, -174, 82)
+default_color = Color(0.980392, 0.686275, 0.0156863, 1)
+
+[node name="Line2D4" type="Line2D" parent="layer2"]
+points = PackedVector2Array(-121, 84, -52, 79)
+default_color = Color(0.980392, 0.686275, 0.0156863, 1)
+
+[node name="Line2D5" type="Line2D" parent="layer2"]
+points = PackedVector2Array(-6, 72, 66, 62)
+default_color = Color(0.980392, 0.686275, 0.0156863, 1)
+
+[node name="Line2D6" type="Line2D" parent="layer2"]
+points = PackedVector2Array(93, 65, 153, 62)
+default_color = Color(0.980392, 0.686275, 0.0156863, 1)
+
+[node name="Line2D7" type="Line2D" parent="layer2"]
+points = PackedVector2Array(178, 60, 259, 68)
+default_color = Color(0.980392, 0.686275, 0.0156863, 1)
+
+[node name="Line2D8" type="Line2D" parent="layer2"]
+points = PackedVector2Array(296, 64, 362, 70)
+default_color = Color(0.980392, 0.686275, 0.0156863, 1)
+
+[node name="car" parent="." instance=ExtResource("1_o1p27")]
+visible = false
+position = Vector2(-97, 29)
+
+[node name="layer1" type="Node2D" parent="."]
+
+[node name="Line2D2" type="Line2D" parent="layer1"]
+points = PackedVector2Array(-294, 143, -298, 131, -254, 125, -206, 129, -197, 125, -211, 120, -217, 116, -228, 121, -172, 123, -156, 132, -134, 140, -115, 143, -92, 147, -52, 151, -10, 149, 35, 148, 67, 140, 145, 116, 182, 102, 218, 106, 234, 103, 219, 100, 213, 100, 201, 98, 192, 97, 179, 94, 249, 104, 279, 118, 309, 133, 329, 146, 267, 164, 238, 147, 219, 143, 176, 148, 157, 148, 112, 160, 88, 168, 72, 181, 296, 184, 342, 191, -328, 201, -325, 158, -101, 168, -351, 157, -359, 113, -352, 184, -318, 172, -324, 105, -317, 188, 63, 155)
+width = 50.0
+default_color = Color(0.319674, 0.524926, 0.21256, 1)
+
+[node name="Line2D" type="Line2D" parent="layer1"]
+points = PackedVector2Array(-368, 113, -216, 96, -164, 100, -107, 120, -27, 127, 63, 119, 118, 96, 178, 72, 236, 76, 295, 101, 325, 116)
+default_color = Color(0.276165, 0.455527, 0.179513, 1)

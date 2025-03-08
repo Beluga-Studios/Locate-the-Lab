@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Locate the Lab"
+config/version="0.1"
+run/main_scene="res://scenes/images/bootscreen.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+boot_splash/image="res://LocateTheLab.png"
+config/icon="res://LocateTheLab.png"
+
+[autoload]
+
+GlobalCanvasLayer="*res://canvas_layer.tscn"
+Autoload="*res://scenes/autoload.tscn"
+Fail="*res://scenes/fail.tscn"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[dotnet]
+
+project/assembly_name="Locate the Lab"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="mobile"

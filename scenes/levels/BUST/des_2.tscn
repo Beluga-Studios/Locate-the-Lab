@@ -1,0 +1,505 @@
+[gd_scene load_steps=16 format=3 uid="uid://oyf707qrhf8s"]
+
+[ext_resource type="PackedScene" uid="uid://n0kgt8o4ppj4" path="res://scenes/images/turn_of_road.tscn" id="1_qdjlt"]
+[ext_resource type="PackedScene" uid="uid://boyomqbtxnrph" path="res://scenes/images/small_car.tscn" id="2_ou1xs"]
+[ext_resource type="Script" path="res://scenes/images/des2-car.gd" id="4_52ynl"]
+[ext_resource type="AudioStream" uid="uid://b2qty8if0wu6e" path="res://assets/audio/sfx/explosion (1).wav" id="4_asv4w"]
+[ext_resource type="Theme" uid="uid://bon0nwmkmu0qt" path="res://assets/theme.tres" id="5_cfjud"]
+[ext_resource type="PackedScene" uid="uid://b42upusjgm6wi" path="res://scenes/images/road_block.tscn" id="6_80t8n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_85tfa"]
+size = Vector2(8, 77)
+
+[sub_resource type="Animation" id="Animation_6eia2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D2/Line2D5:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-179, -136, -180, -55, -177, -9)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D2/Line2D6:points")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(14, -179, 8, -130, 43, -112, 104, -122, 128, -106, 144, -114, 143, -154, 112, -178, 52, -187, 8, -178, 80, -170, 48, -154, 96, -153, 128, -138, 54, -132, 32, -146, 35, -168)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D2/Line2D6:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-464, 82)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D2/Line2D6:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D2/CPUParticles2D:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D2/CPUParticles2D2:emitting")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D2/CPUParticles2D3:emitting")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_p477d"]
+resource_name = "tree_fall"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D2/Line2D5:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-179, -136, -180, -55, -177, -9), PackedVector2Array(-236, -103, -180, -55, -177, -9), PackedVector2Array(-252, -95, -196, -47, -180, -31, -177, -9), PackedVector2Array(-300, -31, -204, -39, -180, -31, -177, -9)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D2/Line2D6:points")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(14, -179, 8, -130, 43, -112, 104, -122, 128, -106, 144, -114, 143, -154, 112, -178, 52, -187, 8, -178, 80, -170, 48, -154, 96, -153, 128, -138, 54, -132, 32, -146, 35, -168)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D2/Line2D6:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-464, 82), Vector2(-440, 112), Vector2(-440, 128), Vector2(-472, 176)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D2/Line2D6:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.583972, -0.759191, -0.693355]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D2/CPUParticles2D:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D2/CPUParticles2D2:emitting")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D2/CPUParticles2D3:emitting")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mv22l"]
+_data = {
+"RESET": SubResource("Animation_6eia2"),
+"tree_fall": SubResource("Animation_p477d")
+}
+
+[sub_resource type="Gradient" id="Gradient_lxcy4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtmsx"]
+size = Vector2(760, 12.3316)
+
+[sub_resource type="Animation" id="Animation_a8ndg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("the giant panda:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(512, -104)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("the giant panda:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("the giant panda:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.98, 1.98)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("the giant panda:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ccqtc"]
+resource_name = "turn_back"
+length = 11.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("the giant panda:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.6, 1, 1.5, 2, 2.5, 3, 3.5, 3.73333, 4, 4.23333, 4.5, 4.7, 4.9, 5.1, 5.3, 5.5, 5.63333, 6.43333, 7.13333, 8.7, 11),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-32, -8), Vector2(-64, -16), Vector2(-64, -24), Vector2(-64, -3.8147e-06), Vector2(-72, -24), Vector2(-72, 0), Vector2(-72, -32), Vector2(-72, -24), Vector2(-72, -32), Vector2(-72, -29), Vector2(-72, -33), Vector2(-72, -29), Vector2(-72, -31), Vector2(-72, -27), Vector2(-73, -33), Vector2(-71, -26), Vector2(-72, -43), Vector2(361, 106), Vector2(1177, 208), Vector2(1593, 208), Vector2(1953, 208)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("the giant panda:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6, 1, 1.5, 2, 2.5, 3, 3.5, 3.73333, 4, 4.23333, 4.5, 4.7, 4.9, 5.1, 5.3, 5.5, 5.63333, 6.43333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.174533, 0.500407, 0.500407, 0.661504, 0.827438, 0.827283, 0.933613, 0.947526, 1.01708, 1.03154, 1.07696, 1.11209, 1.15104, 1.17829, 1.23568, 1.3163, 1.5708, 3.14159]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("the giant panda:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.6, 1, 1.5, 5.63333, 6.43333, 7.16667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(0.3, 0.3), Vector2(0.285, 0.285), Vector2(0.285, 0.285), Vector2(0.75, 0.75), Vector2(1.98, 1.98)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("the giant panda:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.6, 1.5, 5.63333, 6.43333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.712094, -1.39626, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cjcwr"]
+_data = {
+"RESET": SubResource("Animation_a8ndg"),
+"turn_back": SubResource("Animation_ccqtc")
+}
+
+[node name="des2" type="Node2D"]
+
+[node name="turn_of_road" parent="." instance=ExtResource("1_qdjlt")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Node2D2" type="Node2D" parent="."]
+position = Vector2(112, 0)
+
+[node name="Line2D5" type="Line2D" parent="Node2D2"]
+position = Vector2(-196, 79)
+points = PackedVector2Array(-179, -136, -180, -55, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="Node2D2"]
+position = Vector2(-464, 82)
+points = PackedVector2Array(14, -179, 8, -130, 43, -112, 104, -122, 128, -106, 144, -114, 143, -154, 112, -178, 52, -187, 8, -178, 80, -170, 48, -154, 96, -153, 128, -138, 54, -132, 32, -146, 35, -168)
+width = 30.0
+default_color = Color(0.220633, 0.473958, 0.119451, 1)
+
+[node name="Area2D2" type="Area2D" parent="Node2D2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D2/Area2D2"]
+position = Vector2(-360, 24)
+shape = SubResource("RectangleShape2D_85tfa")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D2"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_mv22l")
+}
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Node2D2"]
+position = Vector2(-320, 24)
+emitting = false
+amount = 50
+lifetime = 2.0
+one_shot = true
+explosiveness = 1.0
+spread = 142.94
+gravity = Vector2(0, 400)
+initial_velocity_max = 300.0
+scale_amount_max = 80.0
+color = Color(1, 0, 0, 1)
+color_ramp = SubResource("Gradient_lxcy4")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+anim_speed_max = 128.0
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="Node2D2"]
+position = Vector2(-320, 24)
+emitting = false
+amount = 30
+lifetime = 2.0
+one_shot = true
+explosiveness = 1.0
+spread = 142.94
+gravity = Vector2(0, 400)
+initial_velocity_max = 300.0
+scale_amount_max = 40.0
+color = Color(0.0705882, 1, 0.839216, 1)
+color_ramp = SubResource("Gradient_lxcy4")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+anim_speed_max = 128.0
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="Node2D2"]
+position = Vector2(-320, 24)
+emitting = false
+amount = 30
+lifetime = 2.0
+one_shot = true
+explosiveness = 1.0
+spread = 142.94
+gravity = Vector2(0, 400)
+initial_velocity_max = 300.0
+scale_amount_max = 40.0
+color = Color(0.0901961, 0.0666667, 0.0235294, 1)
+color_ramp = SubResource("Gradient_lxcy4")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+anim_speed_max = 128.0
+
+[node name="the giant panda" parent="." instance=ExtResource("2_ou1xs")]
+position = Vector2(512, -104)
+scale = Vector2(1.98, 1.98)
+script = ExtResource("4_52ynl")
+
+[node name="CPUParticles2D1" type="CPUParticles2D" parent="the giant panda"]
+position = Vector2(-79.8001, 95.9622)
+rotation = -0.342787
+spread = 13.38
+gravity = Vector2(0, 50)
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+scale_amount_max = 8.0
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="the giant panda"]
+position = Vector2(632.845, 89.3963)
+rotation = -0.342787
+spread = 13.38
+gravity = Vector2(0, 50)
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+scale_amount_max = 8.0
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="the giant panda"]
+position = Vector2(588, 90)
+rotation = -0.342787
+spread = 13.38
+gravity = Vector2(0, 50)
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+scale_amount_max = 8.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="the giant panda"]
+stream = ExtResource("4_asv4w")
+bus = &"quait_sfx"
+
+[node name="Area2D" type="Area2D" parent="the giant panda"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="the giant panda/Area2D"]
+position = Vector2(268, 72.8342)
+shape = SubResource("RectangleShape2D_mtmsx")
+
+[node name="Timer" type="Timer" parent="the giant panda"]
+
+[node name="rock" type="Node2D" parent="."]
+position = Vector2(0, -12)
+
+[node name="Line2D16" type="Line2D" parent="rock"]
+position = Vector2(-54, 26)
+points = PackedVector2Array(64, 136, 80, 128, 96, 152, 88, 160, 64, 152)
+closed = true
+default_color = Color(0.546875, 0.546875, 0.546875, 1)
+
+[node name="Line2D17" type="Line2D" parent="rock"]
+position = Vector2(-54, 26)
+points = PackedVector2Array(88, 160, 80, 136, 72, 136, 72, 152, 80, 144)
+closed = true
+default_color = Color(0.546875, 0.546875, 0.546875, 1)
+
+[node name="Line2D15" type="Line2D" parent="rock"]
+position = Vector2(-54, 26)
+points = PackedVector2Array(-8, 152, 72, 160, 40, 128, 16, 120)
+closed = true
+default_color = Color(0.395833, 0.395833, 0.395833, 1)
+
+[node name="Line2D18" type="Line2D" parent="rock"]
+position = Vector2(-54, 26)
+points = PackedVector2Array(0, 152, 64, 152, 40, 136, 16, 128, 8, 144, 48, 144, 16, 136)
+closed = true
+default_color = Color(0.395833, 0.395833, 0.395833, 1)
+
+[node name="road_block" parent="." instance=ExtResource("6_80t8n")]
+position = Vector2(-8, 72)
+
+[node name="Button" type="Button" parent="."]
+offset_left = -136.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = -16.0
+theme = ExtResource("5_cfjud")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -128.0
+offset_top = -56.0
+offset_right = -34.0
+offset_bottom = 33.0
+theme = ExtResource("5_cfjud")
+text = "Turn Back"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = -136.0
+offset_top = 72.0
+offset_right = 40.0
+offset_bottom = 120.0
+theme = ExtResource("5_cfjud")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -128.0
+offset_top = 80.0
+offset_right = -34.0
+offset_bottom = 169.0
+theme = ExtResource("5_cfjud")
+text = "Go Left"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_cjcwr")
+}
+
+[connection signal="area_entered" from="Node2D2/Area2D2" to="the giant panda" method="_on_area_2d_2_area_entered"]
+[connection signal="timeout" from="the giant panda/Timer" to="the giant panda" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="the giant panda" method="_on_button1_pressed"]
+[connection signal="pressed" from="Button2" to="the giant panda" method="_on_button_2_pressed"]

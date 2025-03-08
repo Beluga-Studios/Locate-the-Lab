@@ -1,0 +1,145 @@
+[gd_scene load_steps=3 format=3 uid="uid://t1vs2cc6h7ua"]
+
+[ext_resource type="Theme" uid="uid://bon0nwmkmu0qt" path="res://assets/theme.tres" id="1_gw8ta"]
+[ext_resource type="Script" path="res://scenes/Buttons/trees.gd" id="1_n5nld"]
+
+[node name="trees" type="Node2D"]
+
+[node name="trees" type="Node2D" parent="."]
+position = Vector2(148, 122)
+
+[node name="Node2D5" type="Node2D" parent="trees"]
+position = Vector2(81, -28)
+
+[node name="Line2D" type="Line2D" parent="trees/Node2D5"]
+points = PackedVector2Array(-205, -89, -206, -55)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D2" type="Line2D" parent="trees/Node2D5"]
+position = Vector2(71, 10)
+points = PackedVector2Array(-244, -97, -242, -67)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D3" type="Line2D" parent="trees/Node2D5"]
+position = Vector2(71, 10)
+points = PackedVector2Array(-222, -93, -222, -68)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D5" type="Line2D" parent="trees/Node2D5"]
+position = Vector2(71, 10)
+points = PackedVector2Array(-206, -103, -202, -73)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D4" type="Line2D" parent="trees/Node2D5"]
+points = PackedVector2Array(-216, -96, -204, -87, -174, -87, -152, -84, -128, -94, -118, -101, -128, -112, -142, -119, -157, -119, -175, -127, -191, -121, -204, -110, -214, -102)
+closed = true
+default_color = Color(0.312481, 0.567708, 0.0233653, 1)
+
+[node name="Line2D6" type="Line2D" parent="trees/Node2D5"]
+points = PackedVector2Array(-208, -98, -176, -121, -151, -114, -127, -102, -159, -91, -205, -95, -174, -114, -139, -105, -167, -97, -176, -110, -158, -105, -189, -99, -211, -97)
+default_color = Color(0.312481, 0.567708, 0.0233653, 1)
+
+[node name="Line2D7" type="Line2D" parent="trees/Node2D5"]
+points = PackedVector2Array(-204, -95, -154, -88, -167, -101, -190, -104, -166, -94, -192, -102, -189, -108)
+closed = true
+default_color = Color(0.28668, 0.520833, 0.0214361, 1)
+
+[node name="Node2D6" type="Node2D" parent="trees"]
+position = Vector2(-15, -41)
+
+[node name="Line2D" type="Line2D" parent="trees/Node2D6"]
+points = PackedVector2Array(-205, -89, -206, -55)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D2" type="Line2D" parent="trees/Node2D6"]
+position = Vector2(71, 10)
+points = PackedVector2Array(-244, -97, -242, -67)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D3" type="Line2D" parent="trees/Node2D6"]
+position = Vector2(71, 10)
+points = PackedVector2Array(-222, -93, -222, -68)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D5" type="Line2D" parent="trees/Node2D6"]
+position = Vector2(71, 10)
+points = PackedVector2Array(-206, -103, -202, -73)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D4" type="Line2D" parent="trees/Node2D6"]
+points = PackedVector2Array(-216, -96, -204, -87, -174, -87, -152, -84, -128, -94, -118, -101, -128, -112, -142, -119, -157, -119, -175, -127, -191, -121, -204, -110, -214, -102)
+closed = true
+default_color = Color(0.312481, 0.567708, 0.0233653, 1)
+
+[node name="Line2D6" type="Line2D" parent="trees/Node2D6"]
+points = PackedVector2Array(-208, -98, -176, -121, -151, -114, -127, -102, -159, -91, -205, -95, -174, -114, -139, -105, -167, -97, -176, -110, -158, -105, -189, -99, -211, -97)
+default_color = Color(0.312481, 0.567708, 0.0233653, 1)
+
+[node name="Line2D7" type="Line2D" parent="trees/Node2D6"]
+points = PackedVector2Array(-204, -95, -154, -88, -167, -101, -190, -104, -166, -94, -192, -102, -189, -108)
+closed = true
+default_color = Color(0.28668, 0.520833, 0.0214361, 1)
+
+[node name="Node2D" type="Node2D" parent="trees"]
+
+[node name="Line2D" type="Line2D" parent="trees/Node2D"]
+points = PackedVector2Array(-205, -89, -206, -55)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D2" type="Line2D" parent="trees/Node2D"]
+position = Vector2(71, 10)
+points = PackedVector2Array(-244, -97, -242, -67)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D3" type="Line2D" parent="trees/Node2D"]
+position = Vector2(71, 10)
+points = PackedVector2Array(-222, -93, -222, -68)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D5" type="Line2D" parent="trees/Node2D"]
+position = Vector2(71, 10)
+points = PackedVector2Array(-206, -103, -202, -73)
+default_color = Color(0.427451, 0.196078, 0.0196078, 1)
+
+[node name="Line2D4" type="Line2D" parent="trees/Node2D"]
+points = PackedVector2Array(-216, -96, -204, -87, -174, -87, -152, -84, -128, -94, -118, -101, -128, -112, -142, -119, -157, -119, -175, -127, -191, -121, -204, -110, -214, -102)
+closed = true
+default_color = Color(0.312481, 0.567708, 0.0233653, 1)
+
+[node name="Line2D6" type="Line2D" parent="trees/Node2D"]
+points = PackedVector2Array(-208, -98, -176, -121, -151, -114, -127, -102, -159, -91, -205, -95, -174, -114, -139, -105, -167, -97, -176, -110, -158, -105, -189, -99, -211, -97)
+default_color = Color(0.312481, 0.567708, 0.0233653, 1)
+
+[node name="Line2D7" type="Line2D" parent="trees/Node2D"]
+points = PackedVector2Array(-204, -95, -154, -88, -167, -101, -190, -104, -166, -94, -192, -102, -189, -108)
+closed = true
+default_color = Color(0.28668, 0.520833, 0.0214361, 1)
+
+[node name="Line2D" type="Line2D" parent="trees"]
+points = PackedVector2Array(-211, -56, -199, -57, -201, -80, -179, -81, -176, -57, -166, -57, -168, -80, -157, -79, -157, -60, -147, -58, -145, -79, -140, -84, -135, -63, -127, -65, -129, -83, -121, -83, -119, -94, -110, -101, -119, -108, -97, -110, -96, -86, -86, -87, -86, -108, -76, -108, -74, -86, -68, -87, -67, -108, -59, -114, -53, -90, -44, -92, -50, -115, -31, -129, -43, -144, -57, -152, -75, -152, -94, -160, -113, -155, -126, -143, -138, -157, -155, -166, -170, -165, -192, -174, -208, -167, -233, -149, -238, -137, -227, -127, -227, -97, -222, -95, -211, -86, -211, -56)
+width = 3.0
+
+[node name="Line2D2" type="Line2D" parent="trees"]
+points = PackedVector2Array(-216, -123, -217, -107, -197, -123)
+closed = true
+width = 3.0
+
+[node name="Line2D3" type="Line2D" parent="trees"]
+points = PackedVector2Array(-145, -130, -137, -133, -141, -121)
+closed = true
+width = 3.0
+
+[node name="Line2D4" type="Line2D" parent="trees"]
+position = Vector2(1, -1)
+points = PackedVector2Array(-156, -121, -154, -122, -152, -124, -153, -126, -159, -124)
+closed = true
+width = 3.0
+
+[node name="Button" type="Button" parent="."]
+offset_left = -94.0
+offset_top = -54.0
+offset_right = 121.0
+offset_bottom = 73.0
+theme = ExtResource("1_gw8ta")
+text = "Sneek"
+script = ExtResource("1_n5nld")

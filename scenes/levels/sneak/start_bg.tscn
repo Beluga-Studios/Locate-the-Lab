@@ -1,0 +1,269 @@
+[gd_scene format=3 uid="uid://bqlqtsv2drki8"]
+
+[node name="StartBg" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_offset = Vector2(432, 0)
+
+[node name="bg" type="Node2D" parent="Parallax2D"]
+
+[node name="Line2D" type="Line2D" parent="Parallax2D/bg"]
+points = PackedVector2Array(328, -96, -808, -104)
+width = 150.0
+default_color = Color(0, 0.392157, 1, 1)
+
+[node name="Line2D2" type="Line2D" parent="Parallax2D/bg"]
+position = Vector2(0, 16)
+points = PackedVector2Array(344, 40, -32, 24, -432, 56, -864, 48)
+width = 255.0
+default_color = Color(0.0447444, 0.275391, 0.0614936, 1)
+
+[node name="trees" type="Node2D" parent="Parallax2D"]
+position = Vector2(136, 32)
+
+[node name="2" type="Node2D" parent="Parallax2D/trees"]
+y_sort_enabled = true
+position = Vector2(-528, 0)
+
+[node name="Line2D4" type="Line2D" parent="Parallax2D/trees/2"]
+y_sort_enabled = true
+position = Vector2(229, 32)
+points = PackedVector2Array(-175, -123, -174, -33)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D7" type="Line2D" parent="Parallax2D/trees/2"]
+y_sort_enabled = true
+position = Vector2(-108, -17)
+points = PackedVector2Array(-179, -136, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D8" type="Line2D" parent="Parallax2D/trees/2"]
+y_sort_enabled = true
+position = Vector2(-376, -14)
+points = PackedVector2Array(14, -179, 43, -112, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 30, -188, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 35, -168)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D13" type="Line2D" parent="Parallax2D/trees/2"]
+y_sort_enabled = true
+position = Vector2(92, -25)
+points = PackedVector2Array(-180, -63, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D14" type="Line2D" parent="Parallax2D/trees/2"]
+y_sort_enabled = true
+position = Vector2(-168, 16)
+points = PackedVector2Array(40, -202, 0, -136, 40, -114, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 24, -200, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 48, -160, 32, -144, 16, -170)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D9" type="Line2D" parent="Parallax2D/trees/2"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(229, 32)
+points = PackedVector2Array(-207, -178, -215, -133, -201, -118, -159, -124, -126, -126, -117, -144, -114, -161, -180, -171, -192, -147, -130, -147)
+width = 30.0
+default_color = Color(0.183659, 0.394531, 0.0994332, 1)
+
+[node name="Line2D5" type="Line2D" parent="Parallax2D/trees/2"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(72, 120)
+points = PackedVector2Array(-179, -136, -180, -55, -176, 32)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="Parallax2D/trees/2"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(-194, 121)
+points = PackedVector2Array(14, -179, 8, -130, 43, -112, 104, -122, 128, -106, 144, -114, 143, -154, 112, -178, 52, -187, 8, -178, 80, -170, 48, -154, 96, -153, 128, -138, 54, -132, 32, -146, 35, -168)
+width = 30.0
+default_color = Color(0.220633, 0.473958, 0.119451, 1)
+
+[node name="1" type="Node2D" parent="Parallax2D/trees"]
+y_sort_enabled = true
+
+[node name="Line2D4" type="Line2D" parent="Parallax2D/trees/1"]
+y_sort_enabled = true
+position = Vector2(229, 8)
+points = PackedVector2Array(-175, -123, -174, -33)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D7" type="Line2D" parent="Parallax2D/trees/1"]
+y_sort_enabled = true
+position = Vector2(-108, -17)
+points = PackedVector2Array(-179, -136, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D8" type="Line2D" parent="Parallax2D/trees/1"]
+y_sort_enabled = true
+position = Vector2(-376, -14)
+points = PackedVector2Array(14, -179, 43, -112, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 30, -188, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 35, -168)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D13" type="Line2D" parent="Parallax2D/trees/1"]
+y_sort_enabled = true
+position = Vector2(92, -25)
+points = PackedVector2Array(-180, -63, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D14" type="Line2D" parent="Parallax2D/trees/1"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(-168, 16)
+points = PackedVector2Array(40, -202, 0, -136, 40, -114, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 24, -200, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 48, -160, 32, -144, 16, -170)
+width = 30.0
+default_color = Color(0.191842, 0.412109, 0.103863, 1)
+
+[node name="Line2D9" type="Line2D" parent="Parallax2D/trees/1"]
+y_sort_enabled = true
+position = Vector2(229, 8)
+points = PackedVector2Array(-207, -178, -215, -133, -201, -118, -159, -124, -126, -126, -117, -144, -114, -161, -180, -171, -192, -147, -130, -147)
+width = 30.0
+default_color = Color(0.19366, 0.416016, 0.104848, 1)
+
+[node name="Line2D5" type="Line2D" parent="Parallax2D/trees/1"]
+y_sort_enabled = true
+position = Vector2(-168, 72)
+points = PackedVector2Array(-179, -136, -176, -64, -176, -16)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="Parallax2D/trees/1"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(-434, 73)
+points = PackedVector2Array(14, -179, 8, -130, 43, -112, 104, -122, 128, -106, 144, -114, 143, -154, 112, -178, 52, -187, 8, -178, 80, -170, 48, -154, 96, -153, 128, -138, 54, -132, 32, -146, 35, -168)
+width = 30.0
+default_color = Color(0.21639, 0.464844, 0.117154, 1)
+
+[node name="3" type="Node2D" parent="Parallax2D/trees"]
+y_sort_enabled = true
+position = Vector2(-432, -48)
+
+[node name="Line2D4" type="Line2D" parent="Parallax2D/trees/3"]
+y_sort_enabled = true
+position = Vector2(229, 32)
+points = PackedVector2Array(-175, -123, -174, -33)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D7" type="Line2D" parent="Parallax2D/trees/3"]
+y_sort_enabled = true
+position = Vector2(-108, -17)
+points = PackedVector2Array(-179, -136, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D8" type="Line2D" parent="Parallax2D/trees/3"]
+y_sort_enabled = true
+position = Vector2(-376, -14)
+points = PackedVector2Array(14, -179, 43, -112, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 30, -188, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 35, -168)
+width = 30.0
+default_color = Color(0.18275, 0.392578, 0.098941, 1)
+
+[node name="Line2D13" type="Line2D" parent="Parallax2D/trees/3"]
+y_sort_enabled = true
+position = Vector2(92, -25)
+points = PackedVector2Array(-180, -63, -172, 25)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D14" type="Line2D" parent="Parallax2D/trees/3"]
+y_sort_enabled = true
+position = Vector2(-168, 16)
+points = PackedVector2Array(40, -202, 0, -136, 40, -114, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 24, -200, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 48, -160, 32, -144, 16, -170)
+width = 30.0
+default_color = Color(0.187296, 0.402344, 0.101402, 1)
+
+[node name="Line2D9" type="Line2D" parent="Parallax2D/trees/3"]
+y_sort_enabled = true
+position = Vector2(229, 32)
+points = PackedVector2Array(-207, -178, -215, -133, -201, -118, -159, -124, -126, -126, -117, -144, -114, -161, -180, -171, -192, -147, -130, -147)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D5" type="Line2D" parent="Parallax2D/trees/3"]
+y_sort_enabled = true
+position = Vector2(-136, 16)
+points = PackedVector2Array(-184, -112, -180, -55, -184, 16)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="Parallax2D/trees/3"]
+y_sort_enabled = true
+position = Vector2(-384, 48)
+points = PackedVector2Array(14, -179, 8, -130, 43, -112, 104, -122, 128, -106, 144, -114, 143, -154, 112, -178, 52, -187, 8, -178, 80, -170, 48, -154, 96, -153, 128, -138, 54, -132, 32, -146, 35, -168)
+width = 30.0
+default_color = Color(0.17093, 0.367188, 0.0925418, 1)
+
+[node name="4" type="Node2D" parent="Parallax2D/trees"]
+y_sort_enabled = true
+position = Vector2(96, -48)
+
+[node name="Line2D4" type="Line2D" parent="Parallax2D/trees/4"]
+y_sort_enabled = true
+position = Vector2(229, 8)
+points = PackedVector2Array(-175, -123, -174, -33)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D7" type="Line2D" parent="Parallax2D/trees/4"]
+y_sort_enabled = true
+position = Vector2(-108, -17)
+points = PackedVector2Array(-179, -136, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D8" type="Line2D" parent="Parallax2D/trees/4"]
+y_sort_enabled = true
+position = Vector2(-376, -14)
+points = PackedVector2Array(14, -179, 43, -112, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 30, -188, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 35, -168)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D13" type="Line2D" parent="Parallax2D/trees/4"]
+y_sort_enabled = true
+position = Vector2(92, -25)
+points = PackedVector2Array(-180, -63, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D14" type="Line2D" parent="Parallax2D/trees/4"]
+y_sort_enabled = true
+position = Vector2(-168, 16)
+points = PackedVector2Array(40, -202, 0, -136, 40, -114, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 24, -200, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 48, -160, 32, -144, 16, -170)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D9" type="Line2D" parent="Parallax2D/trees/4"]
+y_sort_enabled = true
+position = Vector2(229, 8)
+points = PackedVector2Array(-207, -178, -215, -133, -201, -118, -159, -124, -126, -126, -117, -144, -114, -161, -180, -171, -192, -147, -130, -147)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D5" type="Line2D" parent="Parallax2D/trees/4"]
+y_sort_enabled = true
+position = Vector2(-168, 72)
+points = PackedVector2Array(-179, -136, -176, -64, -176, -16)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="Parallax2D/trees/4"]
+y_sort_enabled = true
+position = Vector2(-434, 73)
+points = PackedVector2Array(14, -179, 8, -130, 43, -112, 104, -122, 128, -106, 144, -114, 143, -154, 112, -178, 52, -187, 8, -178, 80, -170, 48, -154, 96, -153, 128, -138, 54, -132, 32, -146, 35, -168)
+width = 30.0
+default_color = Color(0.178204, 0.382812, 0.0964797, 1)

@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dihnbidx5odje"]
+
+[node name="Fail" type="Node2D"]
+
+[node name="words" type="Node2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="words"]
+points = PackedVector2Array(8, -16, -8, -16, -8, 0, 8, 0, -8, 0, -8, 24)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="words"]
+points = PackedVector2Array(16, 24, 16, -16, 32, -16, 32, 24, 32, 8, 16, 0)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="words"]
+points = PackedVector2Array(40, -16, 56, -16, 48, -16, 48, 19, 40, 19, 56, 19)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="words"]
+points = PackedVector2Array(64, -21, 64, 19, 80, 19)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-24, -8, -24, -32, 0, -32)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(64, -32, 88, -32, 88, -8)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-24, 8, -24, 32, 0, 32)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(64, 32, 88, 32, 88, 8)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D5" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(16, -32, 48, -32)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(16, 32, 48, 32)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Node2D2" type="Node2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="Node2D2"]
+points = PackedVector2Array(96, 0, -32, 0, 0, 0)
+width = 80.0
+default_color = Color(1, 1, 1, 0.392157)

@@ -1,0 +1,90 @@
+[gd_scene load_steps=2 format=3 uid="uid://n0kgt8o4ppj4"]
+
+[sub_resource type="Curve" id="Curve_05o57"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1e-05, 1), 0.0, 0.0, 0, 0, Vector2(0.795, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[node name="turn_of_road" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Line2D8" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-313, -114, 305, -100)
+width = 300.0
+default_color = Color(0.30739, 0.859689, 1, 1)
+
+[node name="Line2D3" type="Line2D" parent="Node2D"]
+position = Vector2(1, -153)
+points = PackedVector2Array(-425, 129, -283.402, 137.329, -17, 153, 159, 161, 359, 145, -353, 201, -433, 217, -377, 257, -265, 281)
+width = 100.0
+default_color = Color(0, 1, 0, 1)
+
+[node name="Line2D10" type="Line2D" parent="Node2D"]
+position = Vector2(-4, -35)
+points = PackedVector2Array(4, 91, -92, 43, -108, 19)
+width = 100.0
+width_curve = SubResource("Curve_05o57")
+default_color = Color(0.125, 0.125, 0.125, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-184, 144, 394, 161, -424, 240)
+width = 100.0
+default_color = Color(0, 0.442708, 0, 1)
+
+[node name="Line2D12" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-32, 160, 394, 161)
+width = 100.0
+default_color = Color(0, 0.442708, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="Node2D"]
+position = Vector2(229, 8)
+points = PackedVector2Array(-175, -123, -174, -33)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D" type="Line2D" parent="Node2D"]
+position = Vector2(-4, -35)
+points = PackedVector2Array(-468, 235, -316, 179, -148, 155, -60, 99, 76, 91, 332, 115)
+width = 100.0
+default_color = Color(0.125, 0.125, 0.125, 1)
+
+[node name="Line2D5" type="Line2D" parent="Node2D"]
+position = Vector2(-108, -17)
+points = PackedVector2Array(-179, -136, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D11" type="Line2D" parent="Node2D"]
+points = PackedVector2Array(-32, 160, 80, 152, 394, 161)
+width = 100.0
+default_color = Color(0, 0.442708, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="Node2D"]
+position = Vector2(-376, -14)
+points = PackedVector2Array(14, -179, 43, -112, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 30, -188, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 35, -168)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D13" type="Line2D" parent="Node2D"]
+position = Vector2(92, -25)
+points = PackedVector2Array(-180, -63, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D14" type="Line2D" parent="Node2D"]
+position = Vector2(-168, 16)
+points = PackedVector2Array(40, -202, 0, -136, 40, -114, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 24, -200, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 48, -160, 32, -144, 16, -170)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D7" type="Line2D" parent="Node2D"]
+position = Vector2(229, 8)
+points = PackedVector2Array(-207, -178, -215, -133, -201, -118, -159, -124, -126, -126, -117, -144, -114, -161, -180, -171, -192, -147, -130, -147)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[node name="Line2D9" type="Line2D" parent="Node2D"]
+position = Vector2(24, 0)
+points = PackedVector2Array(212, -193, 239, -138, 296, -129, 334, -142, 295, -151, 242, -164, 233, -187)
+width = 30.0
+default_color = Color(0.947917, 0.865145, 0.0273425, 1)

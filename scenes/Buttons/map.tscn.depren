@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqr1n7kcpijte"]
+
+[ext_resource type="Script" path="res://scripts/start.gd" id="1_5ftj3"]
+
+[node name="MAP" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = -59.0
+offset_top = -36.0
+offset_right = 114.0
+offset_bottom = 23.0
+script = ExtResource("1_5ftj3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Words" type="Node2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="Words"]
+points = PackedVector2Array(-50, 16, -37, -30, -13, 13, 6, -29, 26, 16)
+
+[node name="Line2D2" type="Line2D" parent="Words"]
+position = Vector2(-3, 7)
+points = PackedVector2Array(40, 9, 49.7735, -11.633, 52.8313, -18.0883, 58, -29, 69, -6, 49, -7, 69, -5, 77, 8)
+
+[node name="Line2D3" type="Line2D" parent="Words"]
+points = PackedVector2Array(85, 15, 84, -22, 102, -21, 106, -8, 87, -6)
+
+[node name="Icon" type="Node2D" parent="."]
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

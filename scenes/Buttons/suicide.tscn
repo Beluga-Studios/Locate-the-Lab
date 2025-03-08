@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://c31folf7tqte2"]
+
+[ext_resource type="Theme" uid="uid://bon0nwmkmu0qt" path="res://assets/theme.tres" id="1_oqlpb"]
+[ext_resource type="PackedScene" uid="uid://jwjt0u5utj00" path="res://scenes/Buttons/give_up.tscn" id="1_u60eb"]
+[ext_resource type="Script" path="res://scripts/quit.gd" id="1_ygn18"]
+
+[node name="Suicide" type="Node2D"]
+
+[node name="Button2" type="Button" parent="."]
+offset_left = -56.0
+offset_top = -40.0
+offset_right = 120.0
+offset_bottom = 24.0
+theme = ExtResource("1_oqlpb")
+theme_override_font_sizes/font_size = 58
+text = "Quit"
+script = ExtResource("1_ygn18")
+
+[node name="Timer" type="Timer" parent="Button2"]
+
+[node name="Words" type="Node2D" parent="."]
+visible = false
+
+[node name="Line2D" type="Line2D" parent="Words"]
+points = PackedVector2Array(-25, -27, -48, -30, -49, -14, -29, -11, -30, 5, -52, 5)
+
+[node name="Line2D2" type="Line2D" parent="Words"]
+points = PackedVector2Array(-14, -24, -14, 9, 2, 10, 4, -20)
+
+[node name="Line2D3" type="Line2D" parent="Words"]
+points = PackedVector2Array(17, -17, 16, 14)
+
+[node name="Line2D4" type="Line2D" parent="Words"]
+points = PackedVector2Array(17, -33, 17, -24)
+
+[node name="Line2D5" type="Line2D" parent="Words"]
+points = PackedVector2Array(50, -23, 30, -23, 30, 8, 48, 8)
+
+[node name="Line2D6" type="Line2D" parent="Words"]
+points = PackedVector2Array(59, 15, 58, -16)
+
+[node name="Line2D7" type="Line2D" parent="Words"]
+points = PackedVector2Array(57, -28, 58, -19)
+
+[node name="Line2D8" type="Line2D" parent="Words"]
+points = PackedVector2Array(83, -7, 69, -6, 71, 13, 84, 9, 82, -30)
+
+[node name="Line2D9" type="Line2D" parent="Words"]
+points = PackedVector2Array(113, -25, 94, -25, 96, -6, 113, -8, 96, -5, 98, 12, 114, 9)
+
+[node name="give_up" parent="." instance=ExtResource("1_u60eb")]
+visible = false
+position = Vector2(-32, -80)
+
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="timeout" from="Button2/Timer" to="Button2" method="_on_timer_timeout"]

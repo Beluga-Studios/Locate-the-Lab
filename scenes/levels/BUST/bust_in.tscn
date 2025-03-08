@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://dj8yldagpnowm"]
+
+[ext_resource type="PackedScene" uid="uid://oujxm28f15y1" path="res://scenes/images/road.tscn" id="1_pugyw"]
+[ext_resource type="PackedScene" uid="uid://boyomqbtxnrph" path="res://scenes/images/small_car.tscn" id="2_ufmyq"]
+[ext_resource type="Script" path="res://scenes/images/car_on_2nd_snene.gd" id="3_5smsy"]
+[ext_resource type="AudioStream" uid="uid://b2qty8if0wu6e" path="res://assets/audio/sfx/explosion (1).wav" id="4_s4nvm"]
+[ext_resource type="PackedScene" uid="uid://c1n0kyon0in2t" path="res://scenes/images/motor_guy.tscn" id="5_0rhma"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Road" parent="." instance=ExtResource("1_pugyw")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Motor_guy" parent="." instance=ExtResource("5_0rhma")]
+position = Vector2(-320, -38)
+
+[node name="the giant panda" parent="." instance=ExtResource("2_ufmyq")]
+position = Vector2(511, -92)
+scale = Vector2(1.97995, 1.97995)
+script = ExtResource("3_5smsy")
+
+[node name="CPUParticles2D1" type="CPUParticles2D" parent="the giant panda"]
+position = Vector2(-79.8001, 95.9622)
+rotation = -0.342787
+spread = 13.38
+gravity = Vector2(0, 50)
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+scale_amount_max = 8.0
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="the giant panda"]
+position = Vector2(632.845, 89.3963)
+rotation = -0.342787
+spread = 13.38
+gravity = Vector2(0, 50)
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+scale_amount_max = 8.0
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="the giant panda"]
+position = Vector2(588, 90)
+rotation = -0.342787
+spread = 13.38
+gravity = Vector2(0, 50)
+initial_velocity_min = 150.0
+initial_velocity_max = 200.0
+scale_amount_max = 8.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="the giant panda"]
+stream = ExtResource("4_s4nvm")
+bus = &"quait_sfx"

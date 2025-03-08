@@ -1,0 +1,92 @@
+[gd_scene load_steps=6 format=3 uid="uid://c63pr7oyc20qi"]
+
+[ext_resource type="PackedScene" uid="uid://by1lkvdn72fov" path="res://scenes/images/car_front.tscn" id="1_i6mvl"]
+[ext_resource type="Script" path="res://scenes/images/timer.gd" id="2_2oted"]
+[ext_resource type="Script" path="res://scenes/images/car_front.gd" id="2_gd1pl"]
+[ext_resource type="AudioStream" uid="uid://b2qty8if0wu6e" path="res://assets/audio/sfx/explosion (1).wav" id="3_bkxun"]
+
+[sub_resource type="Curve" id="Curve_g0eli"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.99999, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="Road" type="Node2D"]
+
+[node name="Line2D4" type="Line2D" parent="."]
+points = PackedVector2Array(-352, -104, 352, -104)
+width = 127.0
+default_color = Color(0.305882, 0.858824, 1, 1)
+
+[node name="Line2D2" type="Line2D" parent="."]
+position = Vector2(16, 296)
+points = PackedVector2Array(-336, -88, -24, -104, 288, -88)
+width = 500.0
+default_color = Color(0, 0.494792, 0, 1)
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(0, -56, 0, 168)
+width = 300.0
+width_curve = SubResource("Curve_g0eli")
+default_color = Color(0.119792, 0.119792, 0.119792, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Line2D3" type="Line2D" parent="."]
+
+[node name="car_front" parent="." instance=ExtResource("1_i6mvl")]
+z_index = 2
+position = Vector2(0, -40)
+scale = Vector2(0.20299, 0.20299)
+script = ExtResource("2_gd1pl")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="car_front"]
+stream = ExtResource("3_bkxun")
+bus = &"quait_sfx"
+
+[node name="CPUParticles2D1" type="CPUParticles2D" parent="car_front"]
+z_index = -2
+position = Vector2(39.4107, 39.4107)
+rotation = -1.22716
+spread = 13.38
+gravity = Vector2(0, 30)
+initial_velocity_min = 100.0
+initial_velocity_max = 150.0
+scale_amount_max = 8.0
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="car_front"]
+z_index = -2
+position = Vector2(-39.4107, 39.4107)
+rotation = -1.8326
+spread = 13.38
+gravity = Vector2(0, 30)
+initial_velocity_min = 100.0
+initial_velocity_max = 150.0
+scale_amount_max = 8.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+script = ExtResource("2_2oted")
+
+[node name="Line2D5" type="Line2D" parent="."]
+points = PackedVector2Array(-264, -168, -304, -128, -280, -128, -264, -136, -256, -144, -248, -168)
+width = 30.0
+default_color = Color(1, 1, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Line2D5" type="Line2D" parent="Node2D"]
+position = Vector2(68, 63)
+points = PackedVector2Array(-179, -136, -177, -9)
+width = 40.0
+default_color = Color(0.411458, 0.0391612, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="Node2D"]
+position = Vector2(-200, 66)
+points = PackedVector2Array(14, -179, 43, -112, 99, -117, 134, -121, 143, -154, 109, -164, 52, -187, 30, -188, 63, -165, 66, -151, 96, -153, 122, -140, 54, -132, 35, -168)
+width = 30.0
+default_color = Color(0.201237, 0.432292, 0.10895, 1)
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]

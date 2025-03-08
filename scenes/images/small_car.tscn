@@ -1,0 +1,149 @@
+[gd_scene format=3 uid="uid://boyomqbtxnrph"]
+
+[node name="the giant panda" type="Node2D"]
+position = Vector2(0, -23)
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(-98, 77, -95, 68, -82, 65, -72, 72, -61, 76, 255, 73, 337, 76, 342, 7, 332, -4, 321, -11, 301, -13, -2, -6, -40, 28, -107, 28, -107, 74, -100, 82, -96, 70)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D16" type="Line2D" parent="."]
+position = Vector2(307, 0)
+points = PackedVector2Array(-95, 68, -82, 65, -72, 72, -61, 76, 255, 73, 263, 66, 273, 59, 282, 62, 289, 69, 294, 78, 301, 76, 305, 70, 311, 65, 318, 61, 325, 63, 333, 70, 337, 76, 342, 7, 332, -4, 321, -11, 301, -13, -2, -6, -40, 28, -107, 28, -96, 70)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="."]
+points = PackedVector2Array(-91, 68, -90, 43, -38, 42, -40, 60, -76, 56, 249, 58, 320, 62, 324, 16, 316, 5, 238, 2, 3, 11, -24, 42, 309, 26, 9, 26, -101, 59, -93, 67)
+width = 30.0
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D15" type="Line2D" parent="."]
+position = Vector2(302, 0)
+points = PackedVector2Array(-88, 55, -90, 43, -38, 42, -36, 37, -76, 56, 249, 58, 291, 44, 303, 62, 296, 63, 325, 39, 328, 64, 328, 15, 316, 5, 238, 2, -79, -2, -24, 42, 315, 27, -11, 20, -101, 59, -89, 45)
+width = 30.0
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="."]
+position = Vector2(24, -1)
+points = PackedVector2Array(11, 13, 52, 13)
+width = 20.0
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D14" type="Line2D" parent="."]
+position = Vector2(-43, 6)
+points = PackedVector2Array(56, 12, 20, 12, 19, 11, 44, -8, 46, -7, 51, 9, 42, 2, 31, 8)
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D5" type="Line2D" parent="."]
+position = Vector2(91, 6)
+points = PackedVector2Array(12, 13, 60, 12, 61, 6, 60, -1, 30, -1, 18, 0, 13, 4)
+closed = true
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D17" type="Line2D" parent="."]
+position = Vector2(91, 6)
+points = PackedVector2Array(16, 4, 54, 0, 18, 9, 58, 8)
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D12" type="Line2D" parent="."]
+position = Vector2(326, -1)
+points = PackedVector2Array(11, 13, 51, 13)
+width = 20.0
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D6" type="Line2D" parent="."]
+position = Vector2(162, -8)
+points = PackedVector2Array(81, 12, 72, 12)
+width = 5.0
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D7" type="Line2D" parent="."]
+position = Vector2(139, -7)
+points = PackedVector2Array(81, 12, 72, 12)
+width = 5.0
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D8" type="Line2D" parent="."]
+position = Vector2(177, -8)
+points = PackedVector2Array(81, 12, 72, 12)
+width = 5.0
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D9" type="Line2D" parent="."]
+position = Vector2(105, -7)
+points = PackedVector2Array(81, 12, 72, 12)
+width = 5.0
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D10" type="Line2D" parent="."]
+position = Vector2(122, -7)
+points = PackedVector2Array(81, 12, 72, 12)
+width = 5.0
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D11" type="Line2D" parent="."]
+position = Vector2(346, -9)
+points = PackedVector2Array(82, 13, 72, 12, 68, 19, 68, 26, 76, 29, 83, 28, 85, 20, 72, 21, 83, 17, 88, 18)
+closed = true
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D13" type="Line2D" parent="."]
+position = Vector2(221, -9)
+points = PackedVector2Array(81, 13, 72, 12, 68, 19, 68, 26, 76, 29, 82, 24, 83, 19, 72, 21, 81, 16, 83, 23)
+closed = true
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D18" type="Line2D" parent="."]
+position = Vector2(198, -9)
+points = PackedVector2Array(286, 17, 291, 4, 296, 14, 309, 14, 297, 22, 301, 30, 290, 24, 282, 33, 283, 23, 276, 19)
+closed = true
+width = 5.0
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D19" type="Line2D" parent="."]
+position = Vector2(198, -9)
+points = PackedVector2Array(283, 25, 294, 12, 294, 20, 301, 16)
+closed = true
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D20" type="Line2D" parent="."]
+position = Vector2(198, -9)
+points = PackedVector2Array(346, 13, 345, 33, 384, 31, 368, 11, 372, 24, 348, 25, 372, 12)
+closed = true
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Line2D21" type="Line2D" parent="."]
+position = Vector2(256, -11)
+points = PackedVector2Array(346, 13, 345, 33, 384, 31, 368, 11, 372, 24, 348, 25, 372, 12)
+closed = true
+default_color = Color(0, 1, 0.826042, 1)
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(-78, 83)
+
+[node name="Line2D14" type="Line2D" parent="Node2D"]
+position = Vector2(-78, -19)
+rotation = 6.28319
+points = PackedVector2Array(82, 12, 72, 12, 68, 19, 68, 26, 76, 29, 83, 28, 87, 20, 72, 21, 83, 17, 85, 23, 87, 20)
+closed = true
+default_color = Color(0.0885417, 0.0655939, 0.0217013, 1)
+
+[node name="Node2D2" type="Node2D" parent="."]
+position = Vector2(583, 78)
+
+[node name="Line2D15" type="Line2D" parent="Node2D2"]
+position = Vector2(-77, -21)
+points = PackedVector2Array(81, 12, 72, 12, 68, 19, 68, 26, 76, 29, 83, 28, 85, 16, 72, 21, 83, 17, 85, 23)
+closed = true
+default_color = Color(0.0885417, 0.0655939, 0.0217013, 1)
+
+[node name="Node2D3" type="Node2D" parent="."]
+position = Vector2(628, 77)
+
+[node name="Line2D16" type="Line2D" parent="Node2D3"]
+position = Vector2(-77, -19)
+points = PackedVector2Array(82, 14, 72, 12, 68, 19, 68, 26, 76, 29, 83, 28, 83, 17, 72, 21, 83, 17, 81, 22)
+closed = true
+default_color = Color(0.0885417, 0.0655939, 0.0217013, 1)
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]

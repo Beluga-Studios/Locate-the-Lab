@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://vvu7i3tb4f2e"]
+
+[ext_resource type="Script" path="res://scenes/levels/sneak/first.gd" id="1_8p6k4"]
+[ext_resource type="PackedScene" uid="uid://bqlqtsv2drki8" path="res://scenes/levels/sneak/start_bg.tscn" id="1_ku41j"]
+
+[sub_resource type="Animation" id="Animation_pppg6"]
+resource_name = "walk"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y6wk5"]
+_data = {
+"walk": SubResource("Animation_pppg6")
+}
+
+[node name="First" type="Node2D"]
+script = ExtResource("1_8p6k4")
+
+[node name="StartBg" parent="." instance=ExtResource("1_ku41j")]
+
+[node name="person2" type="Node2D" parent="."]
+position = Vector2(234, 76)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="person2"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_y6wk5")
+}
+
+[node name="body" type="Node2D" parent="person2"]
+
+[node name="Line2D" type="Line2D" parent="person2/body"]
+position = Vector2(319, -40)
+points = PackedVector2Array(-333, 88, -331, 78, -319, 58, -319, 78, -312, 88)
+width = 5.0
+
+[node name="Line2D2" type="Line2D" parent="person2/body"]
+position = Vector2(319, -40)
+points = PackedVector2Array(-319, 60, -319, 40, -335, 64, -319, 40)
+width = 5.0
+
+[node name="Line2D8" type="Line2D" parent="person2/body"]
+position = Vector2(320, -40)
+points = PackedVector2Array(-320, 40, -312, 64)
+width = 5.0
+
+[node name="head" type="Node2D" parent="person2"]
+
+[node name="Line2D3" type="Line2D" parent="person2/head"]
+position = Vector2(318, -32)
+points = PackedVector2Array(-320, 32, -312, 32, -304, 24, -304, 16, -312, 8, -320, 8, -328, 16, -328, 24, -320, 32)
+width = 5.0
+
+[node name="Line2D4" type="Line2D" parent="person2/head"]
+position = Vector2(318, -36)
+points = PackedVector2Array(-322, 28, -320, 30, -316, 30, -312, 28)
+width = 2.0
+
+[node name="Line2D5" type="Line2D" parent="person2/head"]
+position = Vector2(316, -38)
+points = PackedVector2Array(-318, 22, -318, 26)
+width = 2.0
+
+[node name="Line2D6" type="Line2D" parent="person2/head"]
+position = Vector2(316, -38)
+points = PackedVector2Array(-314, 22, -314, 26)
+width = 2.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
