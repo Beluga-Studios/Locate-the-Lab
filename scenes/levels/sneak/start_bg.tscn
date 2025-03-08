@@ -2,11 +2,7 @@
 
 [node name="StartBg" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
-
 [node name="Parallax2D" type="Parallax2D" parent="."]
-scroll_offset = Vector2(432, 0)
 
 [node name="bg" type="Node2D" parent="Parallax2D"]
 
