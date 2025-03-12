@@ -26,7 +26,7 @@ position = Vector2(0, -30)
 zoom = Vector2(2, 2)
 
 [node name="MAP" parent="." instance=ExtResource("2_ee4tp")]
-position = Vector2(-16, -56)
+position = Vector2(134, -64)
 
 [node name="Suicide" parent="." instance=ExtResource("3_hmn0p")]
 position = Vector2(160, 136)

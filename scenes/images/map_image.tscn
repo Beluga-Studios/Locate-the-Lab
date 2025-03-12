@@ -2,9 +2,6 @@
 
 [node name="Map-image" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
-
 [node name="map" type="Node2D" parent="."]
 
 [node name="Line2D2" type="Line2D" parent="map"]

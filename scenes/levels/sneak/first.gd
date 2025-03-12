@@ -8,4 +8,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+		$person2.position.x -= 2
+		if $person2.position.x < -650:
+			print("next")
+			Engine.time_scale = 0
+			#get_tree().reload_current_scene()
