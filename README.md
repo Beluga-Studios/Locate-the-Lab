@@ -6,10 +6,10 @@
 A short and funny game where you click a option and something happens. There will be be a few endings when the game is done. this game its made 99% of lines because when we started working on the game we were on a mac because my PC wasn't working and we had no internet. there was no image editing software so we made it all in the Godot editor.
 
 ## Gameplay
-- **Genre:** (Point and Click, funny, Story)
+- **Genre:** Point and Click, funny, Story
 - **Engine:** Godot (version 4.3)
-- **Language:** (GDScript)
-- **Current Platforms:** (Windows, Linux, macOS, Web)
+- **Language:** GDScript
+- **Current Platforms:** Windows, Linux, macOS
 
 ## Installation
 ### Download
@@ -46,4 +46,4 @@ This project is licensed under the [MIT License](LICENSE.md).
 - [YouTube](https://youtube.com/@Beluga-Studios)
 
 ## Acknowledgments
-- Eddie W for the whole idea of the gamwe
+- Eddie W for the whole idea of the game
