@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://wonvdqs2mb74"]
 
 [ext_resource type="PackedScene" uid="uid://xtp52ga273hp" path="res://scenes/images/menu_background.tscn" id="1_0wqks"]
-[ext_resource type="Script" path="res://scenes/images/bootscreen.gd" id="1_4cgs4"]
+[ext_resource type="Script" uid="uid://hldnsd0hy8ur" path="res://scenes/images/bootscreen.gd" id="1_4cgs4"]
 [ext_resource type="PackedScene" uid="uid://dvobuu1ghlj3x" path="res://scenes/images/title.tscn" id="2_llbtc"]
 [ext_resource type="Theme" uid="uid://bon0nwmkmu0qt" path="res://assets/theme.tres" id="4_timee"]
 
@@ -37,8 +37,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8yb70"]
 _data = {
-"RESET": SubResource("Animation_07kh4"),
-"fade": SubResource("Animation_0j7xx")
+&"RESET": SubResource("Animation_07kh4"),
+&"fade": SubResource("Animation_0j7xx")
 }
 
 [node name="bootscreen" type="Node2D"]

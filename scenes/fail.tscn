@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://tn85i8wq7gli"]
 
-[ext_resource type="Script" path="res://scripts/die.gd" id="1_k234f"]
+[ext_resource type="Script" uid="uid://dddkknunxxki5" path="res://scripts/die.gd" id="1_k234f"]
 [ext_resource type="AudioStream" uid="uid://8w1gfs6s52ga" path="res://assets/audio/sfx/explosion2.wav" id="2_52ksy"]
 [ext_resource type="PackedScene" uid="uid://delhsee4rj4s6" path="res://scenes/images/redo_button.tscn" id="2_dym5a"]
 [ext_resource type="FontFile" uid="uid://dt25h4oq7or7t" path="res://assets/fonts/DazHandwriting.otf" id="2_jxm43"]
@@ -181,8 +181,8 @@ tracks/6/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ubpul"]
 _data = {
-"RESET": SubResource("Animation_7hqik"),
-"fail": SubResource("Animation_mf0sq")
+&"RESET": SubResource("Animation_7hqik"),
+&"fail": SubResource("Animation_mf0sq")
 }
 
 [node name="fail" type="CanvasLayer"]

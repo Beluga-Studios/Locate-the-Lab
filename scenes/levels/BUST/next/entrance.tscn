@@ -2,13 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://oujxm28f15y1" path="res://scenes/images/road.tscn" id="1_enpyv"]
 [ext_resource type="PackedScene" uid="uid://boyomqbtxnrph" path="res://scenes/images/small_car.tscn" id="2_vwapj"]
-[ext_resource type="Script" path="res://scenes/levels/BUST/next/node_2d.gd" id="3_oe3xq"]
-[ext_resource type="Script" path="res://scripts/car_go-in-entrance.gd" id="3_u4tmo"]
+[ext_resource type="Script" uid="uid://xvpylhpfkl2l" path="res://scenes/levels/BUST/next/node_2d.gd" id="3_oe3xq"]
+[ext_resource type="Script" uid="uid://ba4dccc6p67wx" path="res://scripts/car_go-in-entrance.gd" id="3_u4tmo"]
 [ext_resource type="AudioStream" uid="uid://s7bc4g74cd6c" path="res://assets/audio/sfx/random (2).wav" id="4_dh7af"]
 [ext_resource type="AudioStream" uid="uid://b2qty8if0wu6e" path="res://assets/audio/sfx/explosion (1).wav" id="4_em7s0"]
 [ext_resource type="AudioStream" uid="uid://c2ach1k2jk14e" path="res://assets/audio/sfx/powerUp.wav" id="5_8u61o"]
 [ext_resource type="PackedScene" uid="uid://8flk4m5liseg" path="res://scenes/images/screen.tscn" id="6_siury"]
-[ext_resource type="Script" path="res://scenes/levels/BUST/next/sound.gd" id="7_rsu4m"]
+[ext_resource type="Script" uid="uid://bm3ei06qud31i" path="res://scenes/levels/BUST/next/sound.gd" id="7_rsu4m"]
 [ext_resource type="AudioStream" uid="uid://dni6fr3g1nlft" path="res://assets/audio/sfx/random (1).wav" id="8_2v380"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e20f2"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c1n0kyon0in2t"]
 
-[ext_resource type="Script" path="res://scenes/images/motor_guy.gd" id="1_ow07f"]
+[ext_resource type="Script" uid="uid://by4joe730htm2" path="res://scenes/images/motor_guy.gd" id="1_ow07f"]
 [ext_resource type="AudioStream" uid="uid://cj4awbgphm35q" path="res://assets/audio/sfx/explosion.wav" id="2_p78im"]
 
 [sub_resource type="Gradient" id="Gradient_i754p"]

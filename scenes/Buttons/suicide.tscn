@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://bon0nwmkmu0qt" path="res://assets/theme.tres" id="1_oqlpb"]
 [ext_resource type="PackedScene" uid="uid://jwjt0u5utj00" path="res://scenes/Buttons/give_up.tscn" id="1_u60eb"]
-[ext_resource type="Script" path="res://scripts/quit.gd" id="1_ygn18"]
+[ext_resource type="Script" uid="uid://dlrq3k3egt8dk" path="res://scripts/quit.gd" id="1_ygn18"]
 
 [node name="Suicide" type="Node2D"]
 

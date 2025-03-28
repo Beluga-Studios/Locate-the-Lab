@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://c63pr7oyc20qi"]
 
 [ext_resource type="PackedScene" uid="uid://by1lkvdn72fov" path="res://scenes/images/car_front.tscn" id="1_i6mvl"]
-[ext_resource type="Script" path="res://scenes/images/timer.gd" id="2_2oted"]
-[ext_resource type="Script" path="res://scenes/images/car_front.gd" id="2_gd1pl"]
+[ext_resource type="Script" uid="uid://ch5bckcahynp4" path="res://scenes/images/timer.gd" id="2_2oted"]
+[ext_resource type="Script" uid="uid://cgs24o6dblujq" path="res://scenes/images/car_front.gd" id="2_gd1pl"]
 [ext_resource type="AudioStream" uid="uid://b2qty8if0wu6e" path="res://assets/audio/sfx/explosion (1).wav" id="3_bkxun"]
 
 [sub_resource type="Curve" id="Curve_g0eli"]

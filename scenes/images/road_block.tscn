@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://b42upusjgm6wi"]
 
-[ext_resource type="Script" path="res://scenes/images/road_block.gd" id="1_5s50s"]
+[ext_resource type="Script" uid="uid://dc82qjj3rsetf" path="res://scenes/images/road_block.gd" id="1_5s50s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kmtbt"]
 size = Vector2(104, 88)
@@ -325,8 +325,8 @@ tracks/8/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4uigs"]
 _data = {
-"RESET": SubResource("Animation_vpje3"),
-"per2": SubResource("Animation_751eu")
+&"RESET": SubResource("Animation_vpje3"),
+&"per2": SubResource("Animation_751eu")
 }
 
 [sub_resource type="Gradient" id="Gradient_dm8cm"]

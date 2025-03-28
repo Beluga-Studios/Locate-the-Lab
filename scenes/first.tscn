@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://b5meoxibrm6xu"]
 
-[ext_resource type="Shader" path="res://shader1.gdshader" id="1_68il5"]
+[ext_resource type="Shader" uid="uid://4gc633cepqfc" path="res://shader1.gdshader" id="1_68il5"]
 [ext_resource type="PackedScene" uid="uid://xtp52ga273hp" path="res://scenes/images/menu_background.tscn" id="1_ti5dk"]
 [ext_resource type="PackedScene" uid="uid://cqr1n7kcpijte" path="res://scenes/Buttons/map.tscn" id="2_ee4tp"]
 [ext_resource type="PackedScene" uid="uid://c31folf7tqte2" path="res://scenes/Buttons/suicide.tscn" id="3_hmn0p"]
