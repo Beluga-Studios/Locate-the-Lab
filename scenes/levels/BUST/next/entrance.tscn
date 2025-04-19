@@ -2,13 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://oujxm28f15y1" path="res://scenes/images/road.tscn" id="1_enpyv"]
 [ext_resource type="PackedScene" uid="uid://boyomqbtxnrph" path="res://scenes/images/small_car.tscn" id="2_vwapj"]
-[ext_resource type="Script" uid="uid://xvpylhpfkl2l" path="res://scenes/levels/BUST/next/node_2d.gd" id="3_oe3xq"]
-[ext_resource type="Script" uid="uid://ba4dccc6p67wx" path="res://scripts/car_go-in-entrance.gd" id="3_u4tmo"]
+[ext_resource type="Script" path="res://scenes/levels/BUST/next/node_2d.gd" id="3_oe3xq"]
+[ext_resource type="Script" path="res://scripts/car_go-in-entrance.gd" id="3_u4tmo"]
 [ext_resource type="AudioStream" uid="uid://s7bc4g74cd6c" path="res://assets/audio/sfx/random (2).wav" id="4_dh7af"]
 [ext_resource type="AudioStream" uid="uid://b2qty8if0wu6e" path="res://assets/audio/sfx/explosion (1).wav" id="4_em7s0"]
 [ext_resource type="AudioStream" uid="uid://c2ach1k2jk14e" path="res://assets/audio/sfx/powerUp.wav" id="5_8u61o"]
 [ext_resource type="PackedScene" uid="uid://8flk4m5liseg" path="res://scenes/images/screen.tscn" id="6_siury"]
-[ext_resource type="Script" uid="uid://bm3ei06qud31i" path="res://scenes/levels/BUST/next/sound.gd" id="7_rsu4m"]
+[ext_resource type="Script" path="res://scenes/levels/BUST/next/sound.gd" id="7_rsu4m"]
 [ext_resource type="AudioStream" uid="uid://dni6fr3g1nlft" path="res://assets/audio/sfx/random (1).wav" id="8_2v380"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e20f2"]
@@ -404,6 +404,7 @@ scale_amount_max = 8.0
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="the giant panda"]
 stream = ExtResource("4_em7s0")
+volume_db = -5.0
 bus = &"quait_sfx"
 
 [node name="Area2D" type="Area2D" parent="the giant panda"]
@@ -419,11 +420,9 @@ zoom = Vector2(2, 2)
 limit_right = -1040
 position_smoothing_enabled = true
 
-[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="the giant panda"]
-
 [node name="powerUP" type="AudioStreamPlayer" parent="the giant panda"]
 stream = ExtResource("5_8u61o")
-volume_db = 5.0
+volume_db = -10.0
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(0, 176)
@@ -453,6 +452,7 @@ default_color = Color(0.395833, 0.395833, 0.395833, 1)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Node2D"]
 stream = ExtResource("4_dh7af")
+volume_db = -13.0
 autoplay = true
 
 [node name="Line2D6" type="Line2D" parent="Node2D"]
@@ -518,6 +518,7 @@ stream = ExtResource("8_2v380")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sound/Area2D"]
 position = Vector2(-984.5, 301)
 shape = SubResource("RectangleShape2D_64wqj")
+disabled = true
 
 [connection signal="area_entered" from="Node2D/Area2D" to="the giant panda" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="sound/Area2D" to="sound" method="_on_area_2d_area_entered"]

@@ -36,4 +36,3 @@ func toggle_particles(toggle :bool):
 
 func _on_button_pressed() -> void:
 	drive = true
-	Autoload.bust_in = true

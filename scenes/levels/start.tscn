@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://clrvnuok4seya"]
 
-[ext_resource type="Script" uid="uid://bcqshhysrrfy2" path="res://scenes/levels/start.gd" id="1_hby7f"]
+[ext_resource type="Script" path="res://scenes/levels/start.gd" id="1_hby7f"]
 [ext_resource type="PackedScene" uid="uid://11gaa8tv0pbj" path="res://scenes/images/map_image.tscn" id="1_rxxyl"]
 [ext_resource type="PackedScene" uid="uid://t1vs2cc6h7ua" path="res://scenes/Buttons/trees.tscn" id="2_r4c6e"]
 [ext_resource type="PackedScene" uid="uid://boyomqbtxnrph" path="res://scenes/images/small_car.tscn" id="3_ehj31"]
 [ext_resource type="Theme" uid="uid://bon0nwmkmu0qt" path="res://assets/theme.tres" id="4_qitp5"]
-[ext_resource type="Script" uid="uid://d13xtjf8io36r" path="res://scenes/images/small_car.gd" id="4_sk6g8"]
+[ext_resource type="Script" path="res://scenes/images/small_car.gd" id="4_sk6g8"]
 [ext_resource type="AudioStream" uid="uid://b2qty8if0wu6e" path="res://assets/audio/sfx/explosion (1).wav" id="6_dhudr"]
 
 [node name="start" type="Node2D"]

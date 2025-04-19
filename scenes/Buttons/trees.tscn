@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://t1vs2cc6h7ua"]
 
 [ext_resource type="Theme" uid="uid://bon0nwmkmu0qt" path="res://assets/theme.tres" id="1_gw8ta"]
-[ext_resource type="Script" uid="uid://cu25yr0280d3p" path="res://scenes/Buttons/trees.gd" id="1_n5nld"]
+[ext_resource type="Script" path="res://scenes/Buttons/trees.gd" id="1_n5nld"]
 
 [node name="trees" type="Node2D"]
 

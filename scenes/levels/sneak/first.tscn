@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://vvu7i3tb4f2e"]
 
-[ext_resource type="Script" uid="uid://8w5csjgpdjv8" path="res://scenes/levels/sneak/first.gd" id="1_8p6k4"]
+[ext_resource type="Script" path="res://scenes/levels/sneak/first.gd" id="1_8p6k4"]
 [ext_resource type="PackedScene" uid="uid://bqlqtsv2drki8" path="res://scenes/levels/sneak/start_bg.tscn" id="1_ku41j"]
 
 [sub_resource type="Animation" id="Animation_gg8fy"]
@@ -180,8 +180,8 @@ tracks/6/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_y6wk5"]
 _data = {
-&"RESET": SubResource("Animation_gg8fy"),
-&"walk": SubResource("Animation_pppg6")
+"RESET": SubResource("Animation_gg8fy"),
+"walk": SubResource("Animation_pppg6")
 }
 
 [node name="First" type="Node2D"]

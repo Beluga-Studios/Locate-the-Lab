@@ -1,19 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://csk4jl3hoxht0"]
+[gd_scene load_steps=2 format=3 uid="uid://csk4jl3hoxht0"]
 
-[ext_resource type="Script" uid="uid://dbpoe2c05j0oa" path="res://scripts/autoload.gd" id="1_onc7o"]
-[ext_resource type="AudioStream" uid="uid://cp7nq2cv5ig53" path="res://assets/audio/music/mystery-box-v-draganov-main-version-00-40-18716.mp3" id="2_jgrmq"]
-[ext_resource type="AudioStream" uid="uid://bpreehp1ak2x8" path="res://assets/audio/music/drive-143259.mp3" id="3_xng6v"]
-[ext_resource type="AudioStream" uid="uid://dure0snqwfasg" path="res://assets/audio/music/drive-sport-rock-141945.mp3" id="4_ca7mw"]
+[ext_resource type="Script" path="res://scripts/autoload.gd" id="1_onc7o"]
 
 [node name="Autoload" type="Node2D"]
 script = ExtResource("1_onc7o")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_jgrmq")
-autoplay = true
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_xng6v")
-
-[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_ca7mw")
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

@@ -17,6 +17,7 @@ func _process(delta: float) -> void:
 	if position.x < -500 and position.y < 600:
 		down = true
 		intial_pos.y += 10
+		Autoload.change_music_to("Lab")
 	intial_pos.x -= 10
 	position = intial_pos
 	$AudioStreamPlayer2D.play()

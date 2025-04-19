@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cqr1n7kcpijte"]
 
-[ext_resource type="Script" uid="uid://b7uq1h08ieywn" path="res://scenes/Buttons/map.gd" id="1_hcuwf"]
+[ext_resource type="Script" path="res://scenes/Buttons/map.gd" id="1_hcuwf"]
 [ext_resource type="PackedScene" uid="uid://11gaa8tv0pbj" path="res://scenes/images/map_image.tscn" id="2_ph3ju"]
 
 [node name="MAP" type="Node2D"]
