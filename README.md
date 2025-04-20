@@ -46,4 +46,5 @@ This project is licensed under the [MIT License](LICENSE.md).
 - [YouTube](https://youtube.com/@Beluga-Studios)
 
 ## Acknowledgments
+- Music by Ryan Falla (pikklchip)
 - Eddie W for the whole idea of the game
